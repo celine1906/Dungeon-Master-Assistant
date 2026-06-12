@@ -1,0 +1,59 @@
+[
+  {
+    "id": "npc_matreous",
+    "type": "npc",
+    "name": "Matreous",
+    "source_section": "M1. FOYER AND HALLWAY, p.18; CONCLUSION, p.25",
+    "full_text": "Middle-aged human sage in gray robes; expert in application and removal of curses. Found in M1 when the party arrives, having spent half an hour trying command words to reopen the portal. Eager to return to Candlekeep where he claims he can keep the portal open from the outside. Will accompany the party back to their cursed village if they take time to explore the mansion for him. Carries an onyx imp figurine he found and intends to study. When he steps through the portal back to Candlekeep, the figurine breaks its enchantment and the imp stings him; party hears him shriek as doors slam. Found dead in the study room when party returns; the now-invisible imp attacks the first creature out of the mansion.",
+    "summary": "Sage and curse expert; quest-giver who found the gateway to Fistandia's mansion; unwittingly killed by the imp figurine he carries back to Candlekeep.",
+    "keywords": ["sage", "Matreous", "curse expert", "gray robes", "human", "Candlekeep", "victim"],
+    "tags": ["npc", "quest_giver", "victim", "killed_by_imp"],
+    "dm_notes": "",
+    "version": 1,
+    "role": "Quest-giver and curse expert. Offers to keep the portal open from the Candlekeep side in exchange for the party exploring the mansion. Dies offscreen between the party exploring and escaping.",
+    "alignment": "Neutral",
+    "location_room_ids": ["M1"],
+    "mm_reference": "Monster Manual: Sage NPC stat block",
+    "stat_block": {
+      "size": "Medium",
+      "creature_type": "humanoid (human)",
+      "alignment": "neutral",
+      "armor_class": 0,
+      "armor_class_source": "<FILL: e.g. 'leather' or '10' for unarmored>",
+      "hit_points": 0,
+      "hp_formula": "<FILL: e.g. '2d8+2'>",
+      "speed": {"walk": 30},
+      "abilities": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "saving_throws": {},
+      "skills": {
+        "Arcana": 0,
+        "History": 0
+      },
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": ["passive Perception <FILL>"],
+      "languages": ["<FILL: any four languages>"],
+      "challenge_rating": "<FILL: e.g. '1/2'>",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [
+        {
+          "name": "<FILL: e.g. Dagger>",
+          "description": "<FILL: Melee Weapon Attack stats and damage>"
+        }
+      ],
+      "legendary_actions": [],
+      "reactions": []
+    }
+  }
+]

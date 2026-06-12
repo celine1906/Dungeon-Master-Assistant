@@ -1,0 +1,73 @@
+[
+  {
+    "id": "monster_swarm_animated_books",
+    "type": "monster",
+    "name": "Swarm of Animated Books",
+    "source_section": "M3. LIBRARY, p.19 (stat block inline)",
+    "full_text": "Medium swarm of Tiny constructs that disguises itself as a heap of books in Fistandia's library. Vulnerable to fire. Immune to poison and psychic damage, and to most conditions including charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, and stunned. Blindsight 60 ft.; blind beyond. Has False Objects: if motionless at the start of combat, advantage on initiative; creatures must succeed on a DC 15 Wisdom (Perception) check to discern it is animate before it acts. Swarm rules: can occupy another creature's space, moves through any opening large enough for a small book, cannot regain HP. Attacks with Book Club at melee reach 0 ft. against targets in its space.",
+    "summary": "Disguised swarm of flying books in the library. Fire vulnerable. Uses False Objects to ambush; targets must beat DC 15 Perception to spot it as animate before it moves.",
+    "keywords": ["swarm", "animated books", "construct", "library", "ambush", "fire vulnerable", "false object"],
+    "tags": ["combat", "ambush_creature", "library", "swarm"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": ["M3"],
+    "quantity": 1,
+    "mm_reference": "",
+    "modifications": "Stat block is original to this adventure; not from Monster Manual.",
+    "stat_block": {
+      "size": "Medium",
+      "creature_type": "swarm of Tiny constructs",
+      "alignment": "<FILL: unaligned>",
+      "armor_class": 0,
+      "armor_class_source": "<FILL: natural armor>",
+      "hit_points": 0,
+      "hp_formula": "<FILL: e.g. 4d8+4>",
+      "speed": {
+        "walk": 0,
+        "fly": 0,
+        "hover": 0
+      },
+      "abilities": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": ["<FILL: fire>"],
+      "damage_resistances": [],
+      "damage_immunities": ["<FILL: poison>", "<FILL: psychic>"],
+      "condition_immunities": [
+        "<FILL: charmed>", "<FILL: exhaustion>", "<FILL: frightened>",
+        "<FILL: grappled>", "<FILL: paralyzed>", "<FILL: petrified>",
+        "<FILL: poisoned>", "<FILL: prone>", "<FILL: restrained>", "<FILL: stunned>"
+      ],
+      "senses": ["<FILL: blindsight 60 ft. (blind beyond)>", "<FILL: passive Perception 10>"],
+      "languages": [],
+      "challenge_rating": "<FILL: 1/4>",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [
+        {
+          "name": "<FILL: False Objects>",
+          "description": "<FILL: full description from PDF stat block>"
+        },
+        {
+          "name": "<FILL: Swarm>",
+          "description": "<FILL: full description from PDF stat block>"
+        }
+      ],
+      "actions": [
+        {
+          "name": "<FILL: Book Club>",
+          "description": "<FILL: Melee Weapon Attack: +X to hit, reach 0 ft., one target in swarm's space. Hit: damage values>"
+        }
+      ],
+      "legendary_actions": [],
+      "reactions": []
+    }
+  }
+]

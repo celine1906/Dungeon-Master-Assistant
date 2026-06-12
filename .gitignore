@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+nlpenv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# API Keys & Secrets
+.env
+*.env
+
+# Claude Code
+.claude/
+claude.md
+
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Old/Backup Files
+Old Files/
+app/
+server.py
+AppIcon.appiconset/
+*_BACKUP.jsonl
+*.backup
+
+# Development
+embed_retrieve*.ipynb
+debug.txt

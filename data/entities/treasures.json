@@ -1,0 +1,17 @@
+[
+  {
+    "id": "treasure_jeweled_letter_opener",
+    "type": "treasure",
+    "name": "Jeweled Letter Opener",
+    "source_section": "M3. LIBRARY, Treasure, p.19",
+    "full_text": "A jeweled letter opener sitting on one of the reading desks in M3. Mundane in function but ornately decorated; worth 20 gp as a sellable curio. Per the adventure's conclusion rules, items that are part of treasure, books, specimens, or weapons acquired in the mansion remain with the party after they leave; anything else evaporates passing through the portal.",
+    "summary": "20 gp jeweled letter opener on a reading desk in the library (M3).",
+    "keywords": ["letter opener", "jeweled", "20 gp", "library", "M3"],
+    "tags": ["mundane_treasure", "small_value"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_id": "M3",
+    "value_gp": 20,
+    "magic_item": false
+  }
+]

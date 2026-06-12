@@ -1,0 +1,17 @@
+[
+  {
+    "id": "item_imp_figurine",
+    "type": "item",
+    "name": "Onyx Imp Figurine",
+    "source_section": "IMP FIGURINE sidebar p.18; M1 description; CONCLUSION p.25",
+    "full_text": "Appears to be a detailed onyx carving of an imp. Actually a real imp that Fistandia summoned and transformed into a statuette by enchantment. The enchantment holds only while the figurine remains inside Fistandia's mansion. Once removed (e.g., when Matreous steps through the portal to Candlekeep), the enchantment ends, the imp returns to its true form, and immediately attacks the carrier. After killing Matreous in the Candlekeep study, the imp turns invisible and waits in a corner; it ambushes the first creature out of the mansion portal. If defeated, the imp disappears in a cloud of black smoke.",
+    "summary": "Onyx-looking imp carving that is actually a real imp bound by enchantment; releases and attacks the carrier the moment it leaves the mansion.",
+    "keywords": ["imp", "figurine", "onyx", "trap item", "Matreous", "Candlekeep ambush"],
+    "tags": ["plot_item", "deceptive", "hostile_on_use", "kills_npc"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_id": "M1",
+    "magical": true,
+    "properties": "Acts as a normal carved statuette while inside Fistandia's mansion. Removing it from the mansion breaks the enchantment and releases the bound imp, which attacks the carrier immediately. The imp uses Monster Manual stats (mm_reference applies to the released form)."
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hook_cursed_village",
+    "type": "story_hook",
+    "name": "The Cursed Village",
+    "source_section": "FINDING THE BOOK, p.17",
+    "full_text": "The party's home settlement has withered: crops failed, livestock starving, rain dwindled. A local mage diagnosed a curse and recommended seeking Matreous, a curse expert studying at Candlekeep. The party travels there to find him.",
+    "summary": "Party's village is cursed; sent to Candlekeep to find sage Matreous for help.",
+    "keywords": [
+      "curse",
+      "village",
+      "Matreous",
+      "Candlekeep",
+      "crops",
+      "famine"
+    ],
+    "tags": [
+      "primary_hook",
+      "personal_stakes"
+    ],
+    "hook_kind": "village_in_need",
+    "leads_to": [
+      "npc_matreous",
+      "overview_joy_of_extradimensional_spaces"
+    ]
+  },
+  {
+    "id": "hook_research_topic",
+    "type": "story_hook",
+    "name": "Researching Extradimensional Spaces",
+    "source_section": "FINDING THE BOOK, p.17",
+    "full_text": "Alternative hook: party is at Candlekeep researching permanent versions of spells, or studying demiplanes and pocket dimensions. The Joy of Extradimensional Spaces surfaces in their research with Fistandia's marginal notes about her permanent mansion and the command word to enter it.",
+    "summary": "Alternative hook: party researching spell permanence or planar spaces discovers Fistandia's book at Candlekeep.",
+    "keywords": [
+      "research",
+      "Candlekeep",
+      "demiplane",
+      "permanent spells",
+      "planar travel"
+    ],
+    "tags": [
+      "alternative_hook",
+      "scholarly"
+    ],
+    "hook_kind": "research_topic",
+    "leads_to": [
+      "item_joy_book",
+      "overview_joy_of_extradimensional_spaces"
+    ]
+  },
+  {
+    "id": "hook_further_adventures",
+    "type": "story_hook",
+    "name": "Further Adventures",
+    "source_section": "FURTHER ADVENTURES, p.25",
+    "full_text": "With Matreous dead, the party must find another way to cure their village: find a different sage at Candlekeep, or undertake quests to earn money for raising Matreous from the dead. Fistandia and her colleague Freyot are still alive (evidenced by their surviving homunculi). They may return to the mansion someday, creating potential conflict if the party is using it as a base.",
+    "summary": "Post-adventure hooks: saving the village without Matreous, and the living wizards Fistandia and Freyot potentially returning.",
+    "keywords": [
+      "Fistandia",
+      "Freyot",
+      "village",
+      "raise dead",
+      "homunculi"
+    ],
+    "tags": [
+      "sequel_hook",
+      "open_ended"
+    ],
+    "hook_kind": "sequel",
+    "leads_to": []
+  },
+  {
+    "id": "hook_assembling_the_books",
+    "type": "story_hook",
+    "name": "Assembling the Books",
+    "source_section": "ASSEMBLING THE BOOKS, p.25",
+    "full_text": "Once the party has collected all (or most) of the seven lettered books, they should be able to guess the command word LIBERTY. Speaking it within 10 feet of the double door in M1 causes a pulse of power to ripple through the mansion and the door swings open, forming a portal back to the Candlekeep study. The doorway stays open for only one minute but the word can be spoken again to reopen it. The party does not need all seven books — collecting enough letters to guess the word is sufficient. This is the climax and escape from the mansion.",
+    "summary": "Speak 'liberty' within 10 ft of the M1 portal to escape. Needs most (not all) 7 lettered books to guess the word. Portal stays open 1 minute, re-speakable.",
+    "keywords": [
+      "liberty",
+      "command word",
+      "escape",
+      "portal",
+      "assembling books",
+      "seven books",
+      "M1"
+    ],
+    "tags": [
+      "escape_mechanism",
+      "adventure_climax",
+      "puzzle_resolution"
+    ],
+    "dm_notes": "Party does not need all 7 books — if they have L-I-B-?-R-T-Y they can likely guess LIBERTY. Use judgment on whether a partial set is enough.",
+    "hook_kind": "escape_mechanism",
+    "leads_to": [
+      "puzzle_lettered_books_liberty",
+      "hook_conclusion_return"
+    ]
+  },
+  {
+    "id": "hook_conclusion_return",
+    "type": "story_hook",
+    "name": "Conclusion: Return to Candlekeep",
+    "source_section": "CONCLUSION, p.25",
+    "full_text": "When the party returns to the Candlekeep study room they find Matreous's body sprawled on the floor and the imp figurine missing. The imp is now invisible and hiding in a corner of the study. It attacks the first creature that exits the mansion portal. If defeated, the imp disappears in a cloud of black smoke. Loot rule: any treasure, books, specimens, or weapons acquired in the mansion remain with the party. Anything else evaporates into smoke as they pass through the doorway.",
+    "summary": "Party returns to find Matreous dead. Invisible imp ambushes first creature out of portal. Loot rule: treasure/books/specimens/weapons persist; everything else evaporates on exit.",
+    "keywords": [
+      "Matreous dead",
+      "imp",
+      "invisible",
+      "ambush",
+      "loot rule",
+      "evaporates",
+      "black smoke",
+      "Candlekeep"
+    ],
+    "tags": [
+      "conclusion",
+      "final_encounter",
+      "loot_rule",
+      "plot_resolution"
+    ],
+    "dm_notes": "Remind players of loot rule before they exit. Persists: treasure, puzzle books, weapons, specimens, driftglobes, potions, alchemical materials, +1 flail. Evaporates: furniture, food, non-adventure objects.",
+    "hook_kind": "conclusion",
+    "leads_to": [
+      "encounter_conclusion_imp",
+      "hook_further_adventures"
+    ]
+  }
+]

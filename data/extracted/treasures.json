@@ -1,0 +1,74 @@
+[
+    {
+    "id": "treasure_jeweled_letter_opener", "type": "treasure",
+     "name": "Jeweled Letter Opener",
+     "source_section": "M3. LIBRARY, Treasure, p.19",
+     "full_text": "A jeweled letter opener sitting on a reading desk in M3. Worth 20 gp.",
+     "summary": "20 gp jeweled letter opener on a reading desk in M3.",
+     "keywords": ["letter opener", "jeweled", "20 gp", "M3"],
+     "tags": ["mundane_treasure"], "location_room_id": "M3", "value_gp": 20, "magic_item": "False"
+    },
+    {
+    "id": "treasure_silverware_m8", "type": "treasure",
+     "name": "Silverware Service",
+     "source_section": "M8. DINING ROOM, Treasure, p.22",
+     "full_text": "The buffet in M8 contains silverware and a service for six. Worth 20 gp total.",
+     "summary": "Silverware and service for six in M8 buffet. Worth 20 gp.",
+     "keywords": ["silverware", "buffet", "20 gp", "M8"],
+     "tags": ["mundane_treasure"], "location_room_id": "M8", "value_gp": 20, "magic_item": "False"
+    },
+    {
+    "id": "treasure_driftglobes", "type": "treasure",
+     "name": "Driftglobes (Pair)",
+     "source_section": "M9. ARBORETUM, Treasure, p.22",
+     "full_text": "Two glowing orbs hanging above the arboretum plants are driftglobes. Cumin and Coriander periodically activate them to provide light for the plants.",
+     "summary": "Two driftglobes providing light for M9 plants. Magic items.",
+     "keywords": ["driftglobes", "magic item", "light", "arboretum", "M9"],
+     "tags": ["magic_item", "utility"], "location_room_id": "M9", "value_gp": 0, "magic_item": "True"
+    },
+    {
+    "id": "treasure_plus_one_flail", "type": "treasure",
+     "name": "+1 Flail (Martial Attack Techniques)",
+     "source_section": "M13. THE CHAINED LIBRARY, Treasure, p.24",
+     "full_text": "If the party defeats the animated chained library, one of its books breaks free with a length of chain still attached and functions as a +1 flail. The book is entitled Martial Attack Techniques.",
+     "summary": "+1 flail (book with chain) from defeating the animated chained library in M13.",
+     "keywords": ["+1 flail", "Martial Attack Techniques", "magic weapon", "M13", "chain"],
+     "tags": ["magic_item", "weapon", "combat_reward"], "location_room_id": "M13", "value_gp": 0, "magic_item": "True"
+    },
+    {
+    "id": "treasure_alchemical_materials", "type": "treasure",
+     "name": "Alchemical Materials",
+     "source_section": "M17. ALCHEMICAL LABORATORY, Treasure, p.25",
+     "full_text": "Searching the room yields 50 gp worth of valuable alchemical reagents.",
+     "summary": "50 gp of alchemical reagents in M17.",
+     "keywords": ["alchemical", "reagents", "50 gp", "M17"],
+     "tags": ["mundane_treasure"], "location_room_id": "M17", "value_gp": 50, "magic_item": "False"
+    },
+    {
+    "id": "treasure_potions_of_healing", "type": "treasure",
+     "name": "Potions of Healing (2)",
+     "source_section": "M17. ALCHEMICAL LABORATORY, Treasure, p.25",
+     "full_text": "Two vials among the alchemical equipment in M17 contain potions of healing.",
+     "summary": "Two potions of healing in M17.",
+     "keywords": ["potions of healing", "healing", "M17"],
+     "tags": ["magic_item", "consumable", "healing"], "location_room_id": "M17", "value_gp": 50, "magic_item": "True"
+  },
+    {
+    "id": "treasure_helmet_longsword_m10", "type": "treasure",
+     "name": "Genuine Helmet and Longsword",
+     "source_section": "M10. STAIRS, p.22",
+     "full_text": "The decorative suit of armor at M10 is purely ornamental, but the helmet and longsword are genuine items of good quality.",
+     "summary": "Real helmet and longsword (good quality, mundane) from the decorative armor in M10.",
+     "keywords": ["helmet", "longsword", "armor", "M10", "mundane"],
+     "tags": ["mundane_treasure", "equipment"], "location_room_id": "M10", "value_gp": 0, "magic_item": "False"
+    },
+    {
+    "id": "treasure_robes_m15", "type": "treasure",
+     "name": "Elegant Robes and Clothing",
+     "source_section": "M15. BEDROOM, p.24",
+     "full_text": "Top drawers of the dresser contain elegant, well-made robes. Lower drawers hold more utilitarian tunics and dresses.",
+     "summary": "Elegant robes and utilitarian clothing in M15 dresser.",
+     "keywords": ["robes", "clothing", "dresser", "M15"],
+     "tags": ["mundane_treasure", "equipment"], "location_room_id": "M15", "value_gp": 0, "magic_item": "False"
+    }
+]

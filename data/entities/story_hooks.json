@@ -1,0 +1,30 @@
+[
+  {
+    "id": "hook_stricken_town_curse",
+    "type": "story_hook",
+    "name": "The Stricken Town",
+    "source_section": "FINDING THE BOOK, p.17",
+    "full_text": "Party's home settlement has withered: crops failing, livestock starving, rain dwindling. A local mage diagnosed a curse and recommended seeking Matreous, a sage and curse expert. Inquiries revealed Matreous is currently studying at Candlekeep. Party travels to Candlekeep to find him.",
+    "summary": "Party's village is under a curse; they're sent to Candlekeep to seek the sage Matreous for help.",
+    "keywords": ["curse", "town", "village", "Matreous", "Candlekeep", "failed crops"],
+    "tags": ["primary_hook", "personal_stakes", "quest_to_candlekeep"],
+    "dm_notes": "",
+    "version": 1,
+    "hook_kind": "village_in_need",
+    "leads_to": ["npc_matreous", "overview_joy_extradimensional_spaces"]
+  },
+  {
+    "id": "hook_researcher_at_candlekeep",
+    "type": "story_hook",
+    "name": "Researching Extradimensional Spaces",
+    "source_section": "FINDING THE BOOK, p.17",
+    "full_text": "Party is at Candlekeep researching permanent versions of spells, or studying demiplanes / pocket dimensions / spaces outside the Material Plane. The book The Joy of Extradimensional Spaces surfaces in their research, with Fistandia's marginal notes about a permanent Mordenkainen's magnificent mansion and its command word.",
+    "summary": "Alternative hook for non-village parties: researching spell permanence or planar travel leads them to Fistandia's book at Candlekeep.",
+    "keywords": ["research", "Candlekeep", "Mordenkainen", "magnificent mansion", "extradimensional", "demiplane"],
+    "tags": ["alternative_hook", "scholarly", "no_personal_stakes"],
+    "dm_notes": "",
+    "version": 1,
+    "hook_kind": "research_topic",
+    "leads_to": ["item_joy_book", "overview_joy_extradimensional_spaces"]
+  }
+]

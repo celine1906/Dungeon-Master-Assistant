@@ -1,0 +1,39 @@
+[
+    {
+    "id": "clue_study_fistandia_lore", "type": "clue",
+     "name": "Fistandia's Study Books Reveal Lore",
+     "source_section": "M5. STUDY, p.20",
+     "full_text": "Spending 30 minutes investigating M5's books reveals: (1) Almost all books were written by Fistandia, mostly memoirs. (2) Fistandia was a powerful mage and priest of Mystra who frequented Candlekeep. (3) Mystra granted Fistandia a permanent extradimensional mansion for her pious service. (4) Fearful a guest might be trapped, Fistandia hid the portal command word on the spines of seven books in her mansion.",
+     "summary": "30-minute search of M5 reveals Fistandia's backstory (mage/priest of Mystra) and the critical hint that 7 lettered-spine books in the mansion spell the exit command word.",
+     "keywords": ["Fistandia", "Mystra", "memoirs", "lettered books", "command word", "seven books"],
+     "tags": ["clue", "lore", "puzzle_hint"],
+     "location_room_id": "M5",
+     "points_to": ["puzzle_lettered_books_liberty"],
+     "discovery_method": "Spend 30 minutes investigating the books in M5."
+    },
+    {
+    "id": "clue_homunculi_lore", "type": "clue",
+     "name": "Homunculi Share Mansion Knowledge",
+     "source_section": "M6. KITCHEN, p.21",
+     "full_text": "When asked direct questions, Cumin and Coriander share: (1) Cumin was made by Fistandia, Coriander by Freyot. (2) Masters went away long ago. (3) Warned not to touch books with single letters on spines (don't know why). (4) Fistandia used to enter the planetarium (M12) then disappear for long stretches. (5) Something keeps building book piles in the library. (6) The imp Fistandia summoned hasn't been seen. (7) Faerie dragons in arboretum (M9) are mischievous but harmless. Additionally: DC 15 Intelligence (Arcana) reveals a master can only have one homunculus, and homunculi die with their master -- so Fistandia and Freyot are still alive.",
+     "summary": "Homunculi share 7 facts including: lettered books are off-limits, Fistandia vanished after using the planetarium, and book piles appear in the library. DC 15 Arcana reveals the masters must be alive.",
+     "keywords": ["homunculi", "Cumin", "Coriander", "planetarium", "lettered books", "imp", "library piles", "Freyot"],
+     "tags": ["clue", "npc_dialogue", "puzzle_hint", "lore"],
+     "location_room_id": "M6",
+     "points_to": ["puzzle_planetarium_telescopes", "puzzle_lettered_books_liberty", "monster_swarm_animated_books", "item_imp_figurine"],
+     "discovery_method": "Ask the homunculi direct questions in M6. They eagerly share everything they know."
+    },
+ 
+    {
+    "id": "clue_star_map_m11", "type": "clue",
+     "name": "Star Map on Laboratory Wall",
+     "source_section": "M11. LABORATORY, Star Map, p.22",
+     "full_text": "The far wall of M11 is almost entirely covered by a map of the night sky with a golden sunburst in the center above the door to M12. Most stars are dots or small circles, but the five most prominent stars are rendered as blazing silver suns. These are the five stars to which the M12 telescopes must be pointed to solve the planetarium puzzle and open the secret door to M13.",
+     "summary": "Wall map in M11 shows 5 bright stars as silver suns (vs dots for others). These are the 5 targets for the M12 telescope puzzle.",
+     "keywords": ["star map", "silver suns", "five stars", "planetarium solution", "M12 puzzle key"],
+     "tags": ["clue", "puzzle_solution_key"],
+     "location_room_id": "M11",
+     "points_to": ["puzzle_planetarium_telescopes", "room_m13_chained_library"],
+     "discovery_method": "Visible on the wall in M11. No check required -- the 5 silver suns are clearly prominent against the dots and small circles."
+    }
+]

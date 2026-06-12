@@ -1,0 +1,28 @@
+ [
+    {
+    "id": "puzzle_lettered_books_liberty", "type": "puzzle",
+     "name": "Lettered Books - LIBERTY",
+     "source_section": "PUZZLE BOOKS, p.18; ASSEMBLING THE BOOKS, p.25",
+     "full_text": "Fistandia created 7 books, each with a single gilded letter on its spine and the same Mordenkainen bust image as The Joy of Extradimensional Spaces. When placed in the correct order, they spell the command word LIBERTY. Speaking this word within 10 feet of the portal (double door in M1) reopens it. The doorway stays open for only a minute but can be spoken again. Book locations: L in M13 (reading desk), I in M5 (armchair), B in M17 (propped against beaker), E in M15 (chest of drawers), R in M3 (shelf, passive Perception 12), T in M11 (middle table), Y in M14 (table).",
+     "summary": "Collect 7 gilded-letter books spelling LIBERTY. Say the word within 10 ft of the M1 portal to escape. Locations: L(M13), I(M5), B(M17), E(M15), R(M3), T(M11), Y(M14).",
+     "keywords": ["LIBERTY", "puzzle books", "command word", "portal", "escape", "gilded letter", "Mordenkainen"],
+     "tags": ["master_puzzle", "escape_mechanism", "adventure_goal"],
+     "location_room_id": "M1",
+     "solution": "Collect 7 books with gilded letters: L (M13 reading desk), I (M5 armchair), B (M17 against beaker), E (M15 chest of drawers), R (M3 shelf), T (M11 middle table), Y (M14 table). Arrange to spell LIBERTY. Speak 'liberty' within 10 feet of the double door in M1.",
+     "dc": "No check required to assemble or speak the word. Individual books may require checks to find (e.g., R needs passive Perception 12).",
+     "unlocks": ["room_m1_foyer_hallway"]
+    },
+    {
+    "id": "puzzle_planetarium_telescopes", "type": "puzzle",
+     "name": "Planetarium Telescope Alignment",
+     "source_section": "M12. PLANETARIUM, p.22-23; M11 Star Map",
+     "full_text": "Five telescopes on bronze plates in M12 can be freely reoriented. A 1-ft crystal sphere sits fixed at center. The star map on M11's wall shows 5 prominent stars as blazing silver suns (ordinary stars are dots/small circles). Point each telescope at one of those 5 bright stars. When all 5 are correctly aligned, starlight focuses through them onto the crystal ball and refracts to illuminate a secret door on one wall leading to M13. This is the only way to discover the secret door (from inside M13 it is plainly visible).",
+     "summary": "Align 5 telescopes to the 5 silver-sun stars from M11's wall map. Crystal ball refracts the focused light onto a secret door to M13.",
+     "keywords": ["planetarium", "telescopes", "crystal ball", "star map", "secret door", "M13", "silver suns"],
+     "tags": ["puzzle", "spatial", "cross_room", "unlocks_room"],
+     "location_room_id": "M12",
+     "solution": "Each telescope must point at one of the 5 brightest stars on the star map in M11 (rendered as blazing silver suns, not dots). When all 5 are aligned, light focuses through telescopes onto the crystal ball, which refracts it to illuminate the secret door to M13 on one wall.",
+     "dc": "No ability check. Observational puzzle. Players must visit M11 to see the star map solution.",
+     "unlocks": ["room_m13_chained_library"]
+    }
+]

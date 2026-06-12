@@ -1,0 +1,22 @@
+[
+  {
+    "id": "clue_homunculi_planetarium_pattern",
+    "type": "clue",
+    "name": "Homunculi Mention Fistandia's Planetarium Visits",
+    "source_section": "M6. KITCHEN, homunculi knowledge bullets, p.21",
+    "full_text": "When asked direct questions, the kitchen homunculi Cumin and Coriander mention that Fistandia used to enter the planetarium (M12) and afterwards disappear for long stretches. They also warn that the master forbade them from touching any book with a single letter on its spine, but do not know why. They state the imp Fistandia summoned has not been seen in a long time, and that something keeps building book piles in the library.",
+    "summary": "Homunculi reveal: Fistandia went into M12 then vanished for long periods (hint that M12 leads somewhere hidden); lettered books are off-limits; imp is missing; books pile themselves in M3.",
+    "keywords": ["homunculi", "Cumin", "Coriander", "planetarium", "lettered books", "imp", "library piles"],
+    "tags": ["clue", "npc_dialogue", "puzzle_hint", "lore"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_id": "M6",
+    "points_to": [
+      "puzzle_planetarium_telescopes",
+      "room_m13_chained_library",
+      "monster_swarm_animated_books",
+      "item_puzzle_book_r"
+    ],
+    "discovery_method": "Asking the homunculi direct questions in M6. They volunteer answers eagerly because they have not had visitors for ages."
+  }
+]

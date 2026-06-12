@@ -1,0 +1,30 @@
+[
+    {
+    "id": "npc_matreous", "type": "npc",
+     "name": "Matreous",
+     "source_section": "M1. FOYER AND HALLWAY, p.18; CONCLUSION, p.25",
+     "full_text": "Middle-aged human sage in gray robes. Expert in application and removal of curses. Found in M1, startled when the party appears. Has been trying command words for half an hour to reopen the portal. Shows the party an onyx imp figurine he found. Offers to keep the portal open from the Candlekeep side if the party explores the mansion for him; willing to help cure their village in exchange. When he steps through, the imp figurine reverts and stings him; the party hears his shriek as the doors slam. Found dead in the Candlekeep study when the party returns. The now-invisible imp hides in a corner and attacks the first creature out of the mansion.",
+     "summary": "Neutral human sage and curse expert. Quest-giver in M1 who offers to keep portal open. Killed offscreen by the imp figurine when he exits the mansion.",
+     "keywords": ["sage", "Matreous", "curse expert", "gray robes", "human", "neutral", "quest-giver", "victim"],
+     "tags": ["npc", "quest_giver", "victim", "killed_by_imp"],
+     "role": "Quest-giver; curse expert. Offers portal maintenance in exchange for mansion exploration. Dies when the imp figurine reverts.",
+     "alignment": "Neutral",
+     "location_room_ids": ["M1"],
+     "stat_block": null,
+     "mm_reference": "Sage stat block (see Monster Manual or adventure p.9)"
+    },
+    {
+    "id": "npc_cumin_and_coriander", "type": "npc",
+     "name": "Cumin and Coriander",
+     "source_section": "M6. KITCHEN, p.20-21",
+     "full_text": "Two homunculi running the kitchen. Cumin was created by Fistandia; Coriander was created by a mage named Freyot. Unlike most homunculi, they can speak Common. Extremely eager to serve after ages of only cats and faerie dragons for company. They pester the party with offers of cooking, cleaning, and mending. Insist on serving bread and soup. Their duties are confined to kitchen (M6) and dining room (M8). They share information if asked directly (see clue_homunculi_lore). A DC 15 Intelligence (Arcana) check reveals: a master can only have one homunculus at a time, and a homunculus dies when its master dies -- meaning Fistandia and Freyot are still alive.",
+     "summary": "Two speaking homunculi (Cumin by Fistandia, Coriander by Freyot) who eagerly serve and share key mansion lore. DC 15 Arcana reveals their masters must still be alive.",
+     "keywords": ["homunculi", "Cumin", "Coriander", "kitchen", "Fistandia", "Freyot", "Common speech", "servants"],
+     "tags": ["npc", "information_source", "friendly"],
+     "role": "Friendly kitchen servants. Information source about the mansion. Their existence proves Fistandia and Freyot are alive.",
+     "alignment": "Neutral",
+     "location_room_ids": ["M6", "M8"],
+     "stat_block": null,
+     "mm_reference": "Homunculus (Monster Manual) -- modified to speak Common"
+    }
+]

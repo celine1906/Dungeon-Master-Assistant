@@ -1,0 +1,98 @@
+[
+    {
+    "id": "encounter_m3_bookshelf_ambush", "type": "encounter",
+     "name": "Library Bookshelf Ambush",
+     "source_section": "M3. LIBRARY, Book Attack, p.19",
+     "full_text": "As the party moves through M3, the swarm (disguised as a book pile) topples a 10-ft freestanding bookshelf onto them. DC 15 Dex save or knocked prone and restrained. Restrained creature: DC 13 Athletics action to free self; ally can lift shelf with DC 15 Athletics. Swarm then engages in combat. Remember: swarm has fire vulnerability; a torch ends this fast.",
+     "summary": "Swarm topples bookshelf (DC 15 Dex save or prone+restrained), then attacks. Fire vulnerability is key.",
+     "keywords": ["ambush", "bookshelf", "swarm", "DC 15 Dex", "restrained", "fire"],
+     "tags": ["combat", "ambush"], "location_room_id": "M3",
+     "monsters_involved": ["monster_swarm_animated_books"],
+     "trigger": "Party moves through M3.",
+     "tactics": "Swarm uses False Objects for initiative advantage, topples shelf first, then attacks restrained characters with Book Club. Fire vulnerability (torches, fire cantrips) ends the fight quickly."
+    },
+    {
+    "id": "encounter_m8_mimic_ambush", "type": "encounter",
+     "name": "Mimic Chair Ambush",
+     "source_section": "M8. DINING ROOM, Mimic Chair, p.22",
+     "full_text": "The chair nearest the kitchen door is a weakened mimic. It attacks creatures entering from the kitchen (most likely path from M6). Weakened state: 30 HP, grapple escape DC 10. Standard mimic stat block otherwise.",
+     "summary": "Weakened mimic near kitchen door ambushes anyone entering from M6. 30 HP, escape DC 10.",
+     "keywords": ["mimic", "chair", "ambush", "weakened", "grapple"],
+     "tags": ["combat", "ambush"], "location_room_id": "M8",
+     "monsters_involved": ["monster_mimic_chair"],
+     "trigger": "Creature enters from the kitchen (M6) or sits in the chair.",
+     "tactics": "Standard mimic adhesive + bite. Weakened so this is a manageable fight for level 1. The real seventh chair is in the corner as evidence."
+    },
+    {
+    "id": "encounter_m9_faerie_dragon_pranks", "type": "encounter",
+     "name": "Faerie Dragon Pranks",
+     "source_section": "M9. ARBORETUM, p.22",
+     "full_text": "Two invisible orange faerie dragons fly toward the party, use Euphoria Breath, and flit away giggling. They disengage and retreat if attacked, going invisible again. This is a social/prank encounter, not a real combat threat.",
+     "summary": "Invisible faerie dragons prank the party with Euphoria Breath. Non-hostile; retreat if attacked.",
+     "keywords": ["faerie dragon", "prank", "Euphoria Breath", "invisible"],
+     "tags": ["social_encounter", "prank", "non_hostile"], "location_room_id": "M9",
+     "monsters_involved": ["monster_faerie_dragons_m9"],
+     "trigger": "Party enters the arboretum.",
+     "tactics": "Not a real fight. Dragons want entertainment. They disengage and flee if attacked. Euphoria Breath is the annoyance, not damage."
+    },
+    {
+    "id": "encounter_m13_chained_library", "type": "encounter",
+     "name": "Chained Library Attack",
+     "source_section": "M13. THE CHAINED LIBRARY, p.23-24",
+     "full_text": "The enchanted chained library attacks any creature that comes within its reach. It grapples on hit (DC 12 escape). Defeating it yields the +1 flail (Martial Attack Techniques book with chain). CR 1 -- this is the hardest combat in the adventure for a 1st-level party.",
+     "summary": "Animated bookshelf attacks anyone within reach. Grapples on hit (DC 12). CR 1 -- hardest fight in the adventure.",
+     "keywords": ["chained library", "grapple", "CR 1", "hardest fight"],
+     "tags": ["combat", "guardian", "boss_fight"], "location_room_id": "M13",
+     "monsters_involved": ["monster_animated_chained_library"],
+     "trigger": "Any creature comes within the library's reach.",
+     "tactics": "Multiattack with grapple. Keep distance if possible. Ranged attacks work. The bench could be used for cover. Party should be level 1 -- this is a real threat."
+    },
+    {
+    "id": "encounter_m14_flying_swords", "type": "encounter",
+     "name": "Flying Swords Attack",
+     "source_section": "M14. TROPHY ROOM, p.24",
+     "full_text": "Two flying swords above the mantel attack if anything in the room is touched. The fire in the fireplace is an illusion (no heat). Trophy heads are decorative. Books are poetry and heroic fiction.",
+     "summary": "Two flying swords attack when anything in the trophy room is touched.",
+     "keywords": ["flying swords", "trap", "touch trigger"],
+     "tags": ["combat", "trap"], "location_room_id": "M14",
+     "monsters_involved": ["monster_flying_swords_m14"],
+     "trigger": "Anything in the room is touched.",
+     "tactics": "Two flying swords at once. Party can avoid entirely by not touching anything (puzzle book Y is on the table, so collecting it triggers combat)."
+    },
+    {
+    "id": "encounter_m18_quasit_ambush", "type": "encounter",
+     "name": "Quasit Toad Ambush",
+     "source_section": "M18. SUMMONING ROOM, p.25",
+     "full_text": "The warty toad next to the bookstand is a quasit in disguise. It waits for a creature to approach and then attacks.",
+     "summary": "Quasit disguised as a toad attacks when someone approaches the bookstand.",
+     "keywords": ["quasit", "toad", "ambush", "summoning room"],
+     "tags": ["combat", "ambush"], "location_room_id": "M18",
+     "monsters_involved": ["monster_quasit_m18"],
+     "trigger": "A creature approaches the bookstand/toad.",
+     "tactics": "Quasit has invisibility, shape-changing, and poison. Fiendish creature -- harder than it looks for level 1."
+    },
+    {
+    "id": "encounter_m19_crawling_claws", "type": "encounter",
+     "name": "Crawling Claws and Slaad Tadpole",
+     "source_section": "M19. PRESERVED MENAGERIE, p.25",
+     "full_text": "Four crawling claws (severed hands that absorbed magical energy) push the lid off their jar and attack when any creature comes within 5 feet. Separately, a slaad tadpole in another jar is alive and attacks if its jar is opened. Two independent triggers in the same room.",
+     "summary": "Four crawling claws auto-attack within 5 ft of their jar. Slaad tadpole attacks if its jar is opened. Two separate triggers.",
+     "keywords": ["crawling claws", "slaad tadpole", "proximity", "jar"],
+     "tags": ["combat", "multi_threat"], "location_room_id": "M19",
+     "monsters_involved": ["monster_crawling_claws_m19", "monster_slaad_tadpole_m19"],
+     "trigger": "Crawling claws: creature within 5 ft. Slaad tadpole: jar opened.",
+     "tactics": "Crawling claws are minor threats (CR 0 each). Slaad tadpole is optional -- only triggers if party opens the jar. Smart parties can avoid the tadpole entirely."
+    },
+    {
+    "id": "encounter_conclusion_imp", "type": "encounter",
+     "name": "Imp Ambush in Candlekeep",
+     "source_section": "CONCLUSION, p.25",
+     "full_text": "When the party returns to the Candlekeep study, Matreous's body is on the floor and the imp figurine is missing. The imp is now invisible, hiding in a corner. It attacks the first creature that exits the mansion portal. If defeated, it disappears in a cloud of black smoke. Items acquired in the mansion remain; everything else taken from the mansion evaporates passing through the doorway.",
+     "summary": "Final encounter: invisible imp ambushes first creature out of the portal. Matreous is dead on the floor. Loot rules: adventure items persist, all else evaporates.",
+     "keywords": ["imp", "invisible", "conclusion", "Matreous dead", "loot rules", "black smoke"],
+     "tags": ["combat", "boss_encounter", "conclusion"], "location_room_id": "M1",
+     "monsters_involved": ["monster_imp_conclusion"],
+     "trigger": "First creature exits the mansion portal into the Candlekeep study.",
+     "tactics": "Imp is invisible -- party needs to locate it. Imp has poison sting. This is the final fight of the adventure. Reminder: treasure, books, specimens, and weapons from the mansion persist; everything else evaporates."
+    }
+]

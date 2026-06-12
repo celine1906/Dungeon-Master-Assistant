@@ -1,0 +1,57 @@
+# Core numerical libraries
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+tensorflow
+keras
+
+# Model utilities
+tqdm
+joblib
+tensorboard
+wandb
+
+# Jupyter / notebook
+jupyter
+ipykernel
+notebook
+
+# Data handling
+h5py
+openpyxl
+xlrd
+
+# API / deployment
+flask
+fastapi
+uvicorn
+
+# Environment & utilities
+python-dotenv
+requests
+pyyaml
+
+# Annotation / dataset utils
+labelme
+roboflow
+
+# Specific Requirements for RAG Pipeline
+ollama
+chromadb
+pydantic
+rank-bm25

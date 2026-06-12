@@ -1,0 +1,13 @@
+[
+    {
+    "id": "overview_joy_of_extradimensional_spaces", "type": "adventure_overview",
+     "name": "The Joy of Extradimensional Spaces",
+     "source_section": "Chapter 1, pp.17-25",
+     "full_text": "A 1st-level adventure set in Candlekeep. The party seeks sage Matreous to cure a cursed village. They find his study empty and discover a portal to mage Fistandia's permanent extradimensional mansion (created via Mordenkainen's magnificent mansion). After entering, Matreous leaves with an imp figurine and the doors slam shut, trapping the party inside. They must explore the mansion and collect seven books with gilded letters on their spines that spell the command word LIBERTY to reopen the portal. Upon return, Matreous is dead (killed by the released imp) and the imp attacks. Outside the mansion, a swirling indigo miasma causes 1 level of exhaustion per minute of exposure.",
+     "summary": "1st-level Candlekeep adventure: party trapped in Fistandia's extradimensional mansion, must spell LIBERTY from 7 puzzle books to escape, then face an imp on return.",
+     "keywords": ["Candlekeep", "Fistandia", "Matreous", "mansion", "extradimensional", "LIBERTY", "puzzle books", "imp", "Mordenkainen"],
+     "tags": ["1st_level", "mystery", "puzzle_heavy", "dungeon_crawl", "library"],
+     "party_level": "1st-level", "setting": "Candlekeep, then Fistandia's extradimensional mansion",
+     "themes": ["mystery", "exploration", "trapped", "library", "puzzle", "discovery"]
+    }
+]

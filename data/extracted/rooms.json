@@ -1,0 +1,241 @@
+[
+    {
+    "id": "room_m1_foyer_hallway", "type": "room", "name": "Foyer and Hallway",
+     "source_section": "M1. FOYER AND HALLWAY, p.18", "room_id": "M1", "level": "middle",
+     "full_text": "Grand foyer where the party emerges from the portal (which looks like double doors from this side). Matreous is here, startled but pleased. He offers to keep the portal open from Candlekeep if the party explores the mansion. He shows them an onyx imp figurine he found. When the party agrees and he steps through, they hear him shriek as the doors slam shut -- the imp figurine reverted and attacked him. The foyer connects to a long hallway running the length of the mansion with doors to several rooms.",
+     "summary": "Entry point; portal appears as double doors. Matreous found here, leaves with imp figurine, doors slam shut trapping the party. Hallway connects to all middle-level rooms.",
+     "keywords": ["foyer", "hallway", "portal", "double doors", "Matreous", "imp figurine", "entry"],
+     "tags": ["entry_point", "npc_encounter", "plot_trigger"],
+     "read_aloud_text": "The ceiling arches to fifteen feet overhead, and long hallways stretch out on either side of the foyer. Standing in the middle of this area is a middle-aged man wearing gray robes.",
+     "connected_rooms": ["M2", "M3", "M4", "M5", "M6", "M9", "M10"],
+     "contains_entity_ids": ["npc_matreous", "item_imp_figurine"],
+     "dcs": [], "light": "oil lamps"
+    },
+    {
+    "id": "room_m2_patio", "type": "room", "name": "Patio",
+     "source_section": "M2. PATIO, p.19", "room_id": "M2", "level": "middle",
+     "full_text": "A semicircular patio paved with gray flagstones nestled against the building. Lit by the swirling indigo miasma that surrounds the mansion. No encounters or treasure here.",
+     "summary": "Simple outdoor patio lit by the indigo miasma. No encounters.",
+     "keywords": ["patio", "flagstones", "miasma", "outdoor"],
+     "tags": ["safe_room", "flavor"],
+     "read_aloud_text": "A semicircular patio paved with gray flagstones is nestled against the building, lit by the swirling indigo miasma that surrounds the mansion.",
+     "connected_rooms": ["M1"], "contains_entity_ids": [],
+     "dcs": [], "light": "indigo miasma"
+    },
+    {
+    "id": "room_m3_library", "type": "room", "name": "Library",
+     "source_section": "M3. LIBRARY, p.19", "room_id": "M3", "level": "middle",
+     "full_text": "Fistandia's working library. Shelves on walls plus two freestanding 10-ft-wide shelf sections in the middle with an aisle between them. Stacked books throughout. Subjects: arcana, natural science, religion, astrology, planar travel, poetry, mythology, folk tales. One book heap is actually a swarm of animated books that ambushes by toppling a freestanding bookshelf onto the party. A jeweled letter opener (20 gp) sits on a reading desk. Puzzle book R is on one of the shelves (passive Perception 12 or thorough search to find).",
+     "summary": "Library with hidden swarm of animated books that ambushes via toppling bookshelf (DC 15 Dex save). Contains puzzle book R and 20 gp letter opener.",
+     "keywords": ["library", "books", "swarm", "animated books", "bookshelf", "puzzle book R", "letter opener"],
+     "tags": ["combat_room", "ambush", "puzzle_book_location", "treasure"],
+     "read_aloud_text": "Tall shelves filled with books line the walls of this room. Two more shelves run through the middle of the room with a ten-foot-wide aisle between them. Several stacks of books are piled high throughout the room. There are small reading desks with cozy scarlet chairs in the corners.",
+     "connected_rooms": ["M1"],
+     "contains_entity_ids": ["monster_swarm_animated_books", "encounter_m3_bookshelf_ambush", "treasure_jeweled_letter_opener", "item_puzzle_book_r"],
+     "dcs": [
+         {"check": "DC 15 Dexterity saving throw", "trigger": "Swarm topples 10-ft bookshelf onto creatures in area", "success": "Avoid", "failure": "Knocked prone and restrained"},
+         {"check": "DC 13 Strength (Athletics)", "trigger": "Restrained creature uses action to free self", "success": "Freed", "failure": "Still restrained"},
+         {"check": "DC 15 Strength (Athletics)", "trigger": "Ally lifts fallen shelf", "success": "All restrained creatures freed"},
+         {"check": "passive Wisdom (Perception) 12", "trigger": "Notice puzzle book R on shelf", "success": "Book spotted automatically"}
+     ], "light": "indigo-tinted through windows, oil lamps"
+    },
+    {
+    "id": "room_m4_exercise_room", "type": "room", "name": "Exercise Room",
+     "source_section": "M4. EXERCISE ROOM, p.19-20", "room_id": "M4", "level": "middle",
+     "full_text": "Fistandia's training room. Battered wooden mannequin with cuts and chips. Weapon rack: 4 daggers, 4 quarterstaffs, 20 darts in a bandolier (all mundane, finely made). One wall has attack/parry diagrams for staff and dagger. An animated broom sweeps the floor by itself. If left alone it ignores the party; if grabbed or menaced it attacks. Floor is stained and scorched from magical practice.",
+     "summary": "Training room with mundane weapons (4 daggers, 4 quarterstaffs, 20 darts) and an animated broom that attacks only if provoked.",
+     "keywords": ["exercise", "training", "weapons", "daggers", "quarterstaffs", "darts", "animated broom", "mannequin"],
+     "tags": ["conditional_combat", "weapon_source"],
+     "read_aloud_text": "This room contains a battered wooden mannequin and a weapon rack holding staffs and daggers, all lit by indigo-tinted light streaming through a window. The floor is stained and scorched. At the far end of the room, a broom hovers in the air, sweeping the floor by itself!",
+     "connected_rooms": ["M1"],
+     "contains_entity_ids": ["monster_animated_broom", "item_weapons_rack_m4"],
+     "dcs": [], "light": "indigo-tinted through window"
+    },
+    {
+    "id": "room_m5_study", "type": "room", "name": "Study",
+     "source_section": "M5. STUDY, p.20", "room_id": "M5", "level": "middle",
+     "full_text": "Door left ajar for cats. Floor-to-ceiling bookshelf on far wall, books on scarlet armchairs and wooden tables, paintings on walls. A fluffy black cat is curled up on a chair; if fed or petted (DC 10 Animal Handling) it follows the party until scared off. Spending 30 minutes investigating reveals: books are mostly Fistandia's memoirs, she was a mage and priest of Mystra, Mystra granted her the permanent mansion, she hid the exit command word on 7 book spines. Three paintings: green dragon in pines, pegasus in flight, unicorn in glade. Secret door behind left bookcase (pull bottom-leftmost book, DC 10 Investigation to find). Passage behind leads to stairs down to lower level (M17-M19). Puzzle book I on an armchair.",
+     "summary": "Study with Fistandia's memoirs, a friendly cat, three paintings, puzzle book I, and a secret door (DC 10 Investigation) leading to lower level stairs. 30 min research reveals lore about Fistandia and the lettered-book puzzle.",
+     "keywords": ["study", "cat", "Fistandia", "memoirs", "Mystra", "secret door", "puzzle book I", "paintings"],
+     "tags": ["lore_room", "secret_door", "puzzle_book_location", "clue_source"],
+     "read_aloud_text": "The entire far wall of this room is a floor-to-ceiling bookshelf. Even more books are resting on several large scarlet armchairs and small wooden tables, and there are several paintings on the walls. A fluffy black cat is curled up on one of the chairs.",
+     "connected_rooms": ["M1", "M17"],
+     "contains_entity_ids": ["item_puzzle_book_i", "clue_study_fistandia_lore"],
+     "dcs": [
+         {"check": "DC 10 Wisdom (Animal Handling)", "trigger": "Feed or pet the cat", "success": "Cat follows party", "failure": "Cat ignores and leaves for kitchen"},
+         {"check": "DC 10 Intelligence (Investigation)", "trigger": "Searching for the secret door trigger book", "success": "Discover the bottom-leftmost book opens the passage"}
+     ], "light": "oil lamps"
+    },
+    {
+    "id": "room_m6_kitchen", "type": "room", "name": "Kitchen",
+     "source_section": "M6. KITCHEN, p.20-21", "room_id": "M6", "level": "middle",
+     "full_text": "Door left slightly open for cats. Large iron stove, tables, racks with hanging pots/pans/utensils, everything sparkling clean. Run by two homunculi: Cumin (created by Fistandia) and Coriander (created by Freyot). They can speak Common (unusual for homunculi). Extremely eager to serve -- insist on bread and soup. Their knowledge (shared if asked): masters went away long ago; warned not to touch lettered-spine books; Fistandia used planetarium then disappeared for long stretches; something builds book piles in library; imp hasn't been seen; faerie dragons in arboretum are harmless pranksters. Cat food bowls in corner; cats gather here to eat.",
+     "summary": "Kitchen run by homunculi Cumin and Coriander who speak Common, eagerly serve, and share 7 key facts about the mansion including hints about the planetarium and lettered books.",
+     "keywords": ["kitchen", "Cumin", "Coriander", "homunculi", "cats", "information", "lore"],
+     "tags": ["npc_location", "clue_source", "safe_room", "rest_area"],
+     "read_aloud_text": "The aromas of cooking permeate this kitchen. A large iron stove takes up one wall, and the rest of the room is filled with large tables and racks lined with hanging pots, pans, and cooking utensils. Everything is sparkling clean.",
+     "connected_rooms": ["M1", "M7", "M8"],
+     "contains_entity_ids": ["npc_cumin_and_coriander", "clue_homunculi_lore"],
+     "dcs": [], "light": "oil lamps"
+    },
+    {
+    "id": "room_m7_pantry", "type": "room", "name": "Pantry",
+     "source_section": "M7. PANTRY, p.21", "room_id": "M7", "level": "middle",
+     "full_text": "Shelves stocked with flour, vegetables, preserved meats, and staples to sustain a household. No encounters or treasure.",
+     "summary": "Well-stocked food pantry. No encounters.",
+     "keywords": ["pantry", "food", "supplies"],
+     "tags": ["safe_room", "flavor"],
+     "read_aloud_text": "",
+     "connected_rooms": ["M6"], "contains_entity_ids": [],
+     "dcs": [], "light": "oil lamps"
+    },
+    {
+    "id": "room_m8_dining_room", "type": "room", "name": "Dining Room",
+     "source_section": "M8. DINING ROOM, p.22", "room_id": "M8", "level": "middle",
+     "full_text": "Crystal chandelier over dark wood table. Six matching chairs with scarlet cushions plus a seventh alone in the far corner. Tapestries of grapevines and winemaking. The chair closest to the M6 door is a weakened mimic (escaped from M19, replaced the real chair which it pushed to the corner). Weakened: 30 HP, grapple escape DC 10. Has only caught occasional cats/faerie dragons. Buffet contains silverware and service for six (20 gp total).",
+     "summary": "Dining room with a weakened mimic disguised as a chair near the kitchen door (30 HP, grapple DC 10). Silverware worth 20 gp in the buffet.",
+     "keywords": ["dining room", "mimic", "chair", "ambush", "silverware", "chandelier"],
+     "tags": ["combat_room", "ambush", "treasure"],
+     "read_aloud_text": "Large windows form the entirety of one wall, looking out on three planted beds filled with vegetation. Within this room, a crystal chandelier hangs above a table made of dark wood. Six matching wooden chairs with scarlet cushions surround the table. A seventh chair sits alone in the far corner.",
+     "connected_rooms": ["M6", "M9"],
+     "contains_entity_ids": ["monster_mimic_chair", "encounter_m8_mimic_ambush", "treasure_silverware_m8"],
+     "dcs": [], "light": "indigo-tinted through large windows, oil lamps"
+    },
+    {
+    "id": "room_m9_arboretum", "type": "room", "name": "Arboretum",
+     "source_section": "M9. ARBORETUM, p.22", "room_id": "M9", "level": "middle",
+     "full_text": "Door from M1 partially open. Open arched walls, flowering shrubs and small trees between paved paths meeting at a semicircular patio. Two glowing driftglobes hang above providing light (no sun). Two invisible orange faerie dragons perched in trees. Mischievous, not hostile -- they use Euphoria Breath then flit away invisible, giggling. If attacked they disengage and retreat, going invisible again. They just want to play with the party.",
+     "summary": "Indoor arboretum with two invisible orange faerie dragons using Euphoria Breath for fun, and two driftglobes (magic items) providing light for the plants.",
+     "keywords": ["arboretum", "faerie dragons", "invisible", "Euphoria Breath", "driftglobes", "plants", "flowers"],
+     "tags": ["social_encounter", "prank", "treasure", "magic_item"],
+     "read_aloud_text": "This end of the building is an arboretum with open, arched walls. Flowering shrubs and small trees grow between paved paths that meet in a semicircular patio. There's no sun, but two glowing globes hang above the plants, bathing them in light. There are colorful blossoms everywhere, filling the air with their perfume.",
+     "connected_rooms": ["M1", "M8"],
+     "contains_entity_ids": ["monster_faerie_dragons_m9", "encounter_m9_faerie_dragon_pranks", "treasure_driftglobes"],
+     "dcs": [], "light": "driftglobes (bright), indigo miasma through arched walls"
+    },
+    {
+    "id": "room_m10_stairs", "type": "room", "name": "Stairs",
+     "source_section": "M10. STAIRS, p.22", "room_id": "M10", "level": "upper",
+     "full_text": "Landing at top of stairs from M1. Decorative suit of armor on wooden stand holding a longsword (point down) in front of a large window. Armor is decorative but helmet and sword are genuine, good quality. Trapdoor above opens into a dusty attic running the length of the building. Passive Perception 13 notices light through floorboards above M13. DC 15 Strength (Athletics) to break through floorboards into M13 below -- alternative entry to the Chained Library bypassing the planetarium puzzle.",
+     "summary": "Staircase landing with decorative armor, genuine helmet and longsword, and a trapdoor to an attic. Passive Perception 13 spots light above M13; DC 15 Athletics to break through floor into M13.",
+     "keywords": ["stairs", "armor", "longsword", "helmet", "attic", "trapdoor", "M13 bypass"],
+     "tags": ["shortcut", "alternative_access"],
+     "read_aloud_text": "",
+     "connected_rooms": ["M1", "M11", "M14", "M15"],
+     "contains_entity_ids": [],
+     "dcs": [
+         {"check": "passive Wisdom (Perception) 13", "trigger": "Notice light through attic floorboards above M13", "success": "Light spotted"},
+         {"check": "DC 15 Strength (Athletics)", "trigger": "Break through attic floorboards into M13", "success": "Access M13 from above"}
+     ], "light": "large window (indigo-tinted)"
+    },
+    {
+    "id": "room_m11_laboratory", "type": "room", "name": "Laboratory",
+     "source_section": "M11. LABORATORY, p.22", "room_id": "M11", "level": "upper",
+     "full_text": "Long wooden tables with glass vessels and books. Wall cabinets with glass doors contain specimens: skulls, bones, mounted animals, rocks, minerals, dried plants, jarred creatures. Measuring devices and scientific apparatus. Mobile blackboard with complex charts and formulas. Colorful globes circle below the ceiling. The far wall is almost entirely covered by a star map with a golden sunburst in center above a closed door (to M12). The star map shows 5 prominent stars as blazing silver suns (all others are dots/small circles) -- this is the solution key for the M12 planetarium puzzle. Puzzle book T is on the middle table.",
+     "summary": "Laboratory with specimens, scientific equipment, and a critical star map on the wall showing 5 silver-sun stars needed to solve the planetarium puzzle (M12). Puzzle book T on middle table.",
+     "keywords": ["laboratory", "star map", "specimens", "planetarium solution", "puzzle book T", "silver suns"],
+     "tags": ["puzzle_clue", "lore_room", "puzzle_book_location"],
+     "read_aloud_text": "Most of this room is taken up by long wooden tables that are covered with glass vessels and books. Cabinets with glass doors line the walls, and they contain all manner of specimens. Just below the ceiling in the middle of the room, colorful globes circle each other in an intricate dance. The far wall is almost completely covered by a map of the night sky, with a golden sunburst in the center above a closed door.",
+     "connected_rooms": ["M10", "M12"],
+     "contains_entity_ids": ["item_puzzle_book_t", "clue_star_map_m11"],
+     "dcs": [], "light": "oil lamps, colorful globes"
+    },
+    {
+    "id": "room_m12_planetarium", "type": "room", "name": "Planetarium",
+     "source_section": "M12. PLANETARIUM, p.22-23", "room_id": "M12", "level": "upper",
+     "full_text": "Detailed illusion of a grassy knoll on a moonless night. Springy turf underfoot; with doors closed, starry sky visible in all directions. Terrain beyond 20 ft at ground level is shadowy and indistinct; only the sky is sharp and clear, stars shining fiercely. Five telescopes on bronze plates, easy to reorient but firmly mounted. A 1-ft crystal sphere in a brass stand at center, also fixed. To solve the puzzle: point each telescope at one of the 5 brightest stars from the M11 star map. When all 5 align, starlight focuses through them onto the crystal ball and refracts to illuminate a secret door to M13. The secret door is only discoverable by solving this puzzle (from inside M13 it is plainly visible).",
+     "summary": "Planetarium with starry-sky illusion, 5 telescopes, and a crystal ball. Align telescopes to the 5 silver-sun stars from M11's map to reveal the secret door to M13 (Chained Library).",
+     "keywords": ["planetarium", "telescopes", "stars", "crystal ball", "secret door", "puzzle", "illusion"],
+     "tags": ["puzzle_room", "secret_door"],
+     "read_aloud_text": "The door opens into a dark, open space offering a view of the starry firmament of the night sky. Five telescopes mounted on bronze plates point toward the constellations above. In the middle of the space, a one-foot-diameter sphere of clear crystal sits in a circular brass stand.",
+     "connected_rooms": ["M11", "M13"],
+     "contains_entity_ids": ["puzzle_planetarium_telescopes"],
+     "dcs": [], "light": "starlight illusion (dim)"
+    },
+    {
+    "id": "room_m13_chained_library", "type": "room", "name": "The Chained Library",
+     "source_section": "M13. THE CHAINED LIBRARY, p.23", "room_id": "M13", "level": "upper",
+     "full_text": "Access via M12 puzzle or breaking through attic floor from M10. Bare room: a chained bookshelf against one wall, a wooden bench, and a reading desk built into the shelves. Three shelves of iron-bound books chained to the shelves (a chained library). The library is enchanted and jealously possessive -- it attacks any creature within reach. Contains rare tomes on sciences, arcana, alchemy, planar lore, and creature summoning. All books are permanently fixed by enchanted chains. If defeated, one book (Martial Attack Techniques) breaks free with chain attached and functions as a +1 flail. Puzzle book L is on the reading desk.",
+     "summary": "Hidden room with an animated chained library that attacks on approach. Defeating it yields a +1 flail (Martial Attack Techniques book). Puzzle book L on the reading desk.",
+     "keywords": ["chained library", "animated", "chains", "flail", "+1", "puzzle book L", "rare books"],
+     "tags": ["combat_room", "treasure", "magic_item", "puzzle_book_location"],
+     "read_aloud_text": "This room is bare except for a bookshelf covered in chains against one wall, a plain wooden bench, and a reading desk built into the shelves. A book with the bust of a mage on its cover sits on the desk.",
+     "connected_rooms": ["M12"],
+     "contains_entity_ids": ["monster_animated_chained_library", "encounter_m13_chained_library", "treasure_plus_one_flail", "item_puzzle_book_l"],
+     "dcs": [], "light": "dim (no windows, accessed from planetarium)"
+    },
+    {
+    "id": "room_m14_trophy_room", "type": "room", "name": "Trophy Room",
+     "source_section": "M14. TROPHY ROOM, p.24", "room_id": "M14", "level": "upper",
+     "full_text": "Scarlet armchairs and reading tables with entertainment books (poetry, heroic fiction) in each corner. Decorative trophy heads on walls: stag, wolf, peryton, hell hound, black dragon wyrmling. Fireplace with a cheery fire (illusion, no heat). Two swords in a rack above the mantel are flying swords that attack if anything in the room is touched. Puzzle book Y is on one of the tables.",
+     "summary": "Pleasant parlor with illusory fireplace and decorative trophy heads. Two flying swords above the mantel attack if anything in the room is touched. Puzzle book Y on a table.",
+     "keywords": ["trophy room", "flying swords", "fireplace", "illusion", "trophy heads", "puzzle book Y"],
+     "tags": ["combat_room", "trap", "puzzle_book_location"],
+     "read_aloud_text": "Each corner of this pleasant parlor has a scarlet armchair and a reading table piled high with books. A cheery fire burns in the fireplace. A pair of swords sits in a rack above the fireplace, and the heads of various animals are mounted on the walls.",
+     "connected_rooms": ["M10"],
+     "contains_entity_ids": ["monster_flying_swords_m14", "encounter_m14_flying_swords", "item_puzzle_book_y"],
+     "dcs": [], "light": "illusory firelight (no heat), oil lamps"
+    },
+    {
+    "id": "room_m15_bedroom", "type": "room", "name": "Bedroom",
+     "source_section": "M15. BEDROOM, p.24", "room_id": "M15", "level": "upper",
+     "full_text": "Door left ajar for cats (as is M10 hall door). Canopied bed with scarlet curtains, jug and washbasin on chest of drawers, fluffy black cat napping on scarlet easy chair. Painting of a gold dragon on a mountaintop. Cat behaves same as M5 cat (DC 10 Animal Handling to follow). Top drawers: elegant robes. Bottom drawers: utilitarian tunics and dresses. Puzzle book E is on the chest of drawers.",
+     "summary": "Bedroom with a friendly cat (DC 10 Animal Handling), clothing in drawers, gold dragon painting, and puzzle book E on the chest of drawers.",
+     "keywords": ["bedroom", "cat", "robes", "clothing", "puzzle book E", "gold dragon painting"],
+     "tags": ["safe_room", "puzzle_book_location"],
+     "read_aloud_text": "This is an open and airy bedroom. A canopied bed with rich scarlet curtains occupies one corner. A jug and a washbasin stand on top of a chest of drawers, and a fluffy black cat is napping on a scarlet easy chair. One wall is covered with a large painting of a gold dragon perched heroically on a mountaintop.",
+     "connected_rooms": ["M10", "M16"],
+     "contains_entity_ids": ["item_puzzle_book_e"],
+     "dcs": [{"check": "DC 10 Wisdom (Animal Handling)", "trigger": "Feed or pet the cat", "success": "Cat follows party until combat scares it off"}],
+     "light": "oil lamps"
+    },
+    {
+    "id": "room_m16_balcony", "type": "room", "name": "Balcony",
+     "source_section": "M16. BALCONY, p.24", "room_id": "M16", "level": "upper",
+     "full_text": "Wrought iron balcony with slate flagstones overlooking the arboretum below. The indigo miasma presses in closer above the mansion than at ground level. No encounters.",
+     "summary": "Balcony overlooking the arboretum. Miasma is closer here than at ground level.",
+     "keywords": ["balcony", "arboretum view", "miasma"],
+     "tags": ["safe_room", "flavor"],
+     "read_aloud_text": "The door from the bedroom leads to a wrought iron balcony lined with slate flagstones. The greenery and colorful flowers of the arboretum are visible below.",
+     "connected_rooms": ["M15"], "contains_entity_ids": [],
+     "dcs": [], "light": "indigo miasma (closer than ground level)"
+    }, 
+    {
+    "id": "room_m17_alchemical_lab", "type": "room", "name": "Alchemical Laboratory",
+     "source_section": "M17. ALCHEMICAL LABORATORY, p.24-25", "room_id": "M17", "level": "lower",
+     "full_text": "Chemical-smelling room with long tables laden with vials, beakers, and flasks of various liquids and powders. Books on chemical science and alchemy stacked between glassware. Yellowed charts and blackboard formulas on walls. DC 13 Intelligence check reveals the research goal was transmuting materials to gold (judging by scorch marks and acid burns, with many spectacular failures). Four clay homunculus-creation figures on a table ranging from crude to lifelike (DC 13 Arcana to identify). 50 gp of alchemical materials can be gathered by searching. Two vials are potions of healing. Puzzle book B propped against a large beaker.",
+     "summary": "Alchemy lab with failed transmutation research. Contains 50 gp alchemical materials, 2 potions of healing, clay homunculus figures (DC 13 Arcana), and puzzle book B.",
+     "keywords": ["alchemy", "laboratory", "potions of healing", "alchemical materials", "transmutation", "puzzle book B", "homunculus figures"],
+     "tags": ["treasure", "lore_room", "puzzle_book_location"],
+     "read_aloud_text": "The air here smells of astringent chemicals. Long wooden tables stretch across the room, laden with vials, beakers, and flasks holding various liquids and powders. Books are stacked between the glassware and chemicals. Yellowed paper charts and blackboards full of complex formulas cover the walls.",
+     "connected_rooms": ["M5", "M18"],
+     "contains_entity_ids": ["treasure_alchemical_materials", "treasure_potions_of_healing", "item_puzzle_book_b", "item_homunculus_figures"],
+     "dcs": [
+         {"check": "DC 13 Intelligence", "trigger": "Examining charts and formulas", "success": "Determine research goal was gold transmutation"},
+         {"check": "DC 13 Intelligence (Arcana)", "trigger": "Examining the clay figures", "success": "Identify as homunculus creation figures"}
+     ], "light": "oil lamps"
+    },
+    {
+    "id": "room_m18_summoning_room", "type": "room", "name": "Summoning Room",
+     "source_section": "M18. SUMMONING ROOM, p.25", "room_id": "M18", "level": "lower",
+     "full_text": "Dark stone-walled room. 5-ft-diameter circle of intricate runes on floor. Empty wooden bookstand opposite the door. Bronze braziers at the other three cardinal points of the circle (contents long burned to cinders). Smells of charcoal and sulfur. A warty toad sits next to the bookstand -- it is actually a quasit in toad form. It waits for a creature to approach then attacks. This is where Fistandia originally summoned the imp that became the figurine.",
+     "summary": "Summoning room with a rune circle and braziers. A quasit disguised as a toad attacks anyone who approaches.",
+     "keywords": ["summoning", "runes", "quasit", "toad", "braziers", "sulfur"],
+     "tags": ["combat_room", "ambush"],
+     "read_aloud_text": "This dark, stone-walled room contains only a few objects. A five-foot-diameter circle of intricate runes covers the floor. There's an empty wooden bookstand opposite the door and bronze braziers at the other three cardinal points of the circle. Whatever material they contained has long ago burned to cinders, but the room still smells of charcoal and sulfur. Sitting next to the bookstand is a warty toad.",
+     "connected_rooms": ["M17", "M19"],
+     "contains_entity_ids": ["monster_quasit_m18", "encounter_m18_quasit_ambush"],
+     "dcs": [], "light": "dark (no light sources described)"
+    },
+    {"id": "room_m19_preserved_menagerie", "type": "room", "name": "Preserved Menagerie",
+     "source_section": "M19. PRESERVED MENAGERIE, p.25", "room_id": "M19", "level": "lower",
+     "full_text": "Smells of alcohol and brine. Glass vessels (1-6 ft tall) in rows on floor and tables, each containing a preserved creature in clear liquid. Collection includes: cockatrice, flumph, giant fire beetle, small grell, myconid sprout, pseudodragon (all dead specimens). Four severed hands in one jar -- these have absorbed magical energy and become crawling claws; they push off the lid and attack when any creature comes within 5 ft. A slaad tadpole is still alive and attacks if its jar is opened. One 4-ft container is empty with lid missing -- this held the mimic now in M8 (it feigned death, recovered, and escaped upstairs).",
+     "summary": "Specimen room with preserved creatures in jars. Four crawling claws attack within 5 ft of their jar. A living slaad tadpole attacks if its jar is opened. The empty container is where the M8 mimic escaped from.",
+     "keywords": ["menagerie", "specimens", "crawling claws", "slaad tadpole", "jars", "mimic origin", "preserved creatures"],
+     "tags": ["combat_room", "lore_room"],
+     "read_aloud_text": "Smells of alcohol and brine permeate this room. Glass vessels large and small stand in rows on the floor and tables, ranging from one foot to six feet tall. Inside each vessel is the body of a creature floating in clear liquid. One four-foot-tall container is missing its lid and has no occupant.",
+     "connected_rooms": ["M18"],
+     "contains_entity_ids": ["monster_crawling_claws_m19", "monster_slaad_tadpole_m19", "encounter_m19_crawling_claws"],
+     "dcs": [], "light": "dim (no light sources described)"
+    }
+]

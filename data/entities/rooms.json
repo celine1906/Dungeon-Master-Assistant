@@ -1,0 +1,49 @@
+[
+  {
+    "id": "room_m3_library",
+    "type": "room",
+    "name": "Library",
+    "source_section": "M3. LIBRARY, p.19",
+    "full_text": "Fistandia's working library. Tall shelves line the walls; two freestanding shelf sections run through the middle with a 10-foot-wide aisle between them. Stacks of books are piled throughout. Reading desks with scarlet chairs sit in the corners. Subjects on the shelves: arcana, natural science, religion, astrology, planar travel, poetry, mythology, folk tales. One book pile is actually a swarm of animated books that ambushes the party by toppling a 10-ft freestanding shelf onto them. A jeweled letter opener (20 gp) sits on a reading desk. The lettered puzzle book bearing R is somewhere on the shelves.",
+    "summary": "Fistandia's main library; concealed swarm of animated books ambushes via toppling bookshelf; contains the R puzzle book and a 20 gp jeweled letter opener.",
+    "keywords": ["library", "bookshelves", "swarm", "animated books", "ambush", "puzzle book R", "letter opener", "scarlet chairs"],
+    "tags": ["combat_room", "ambush", "puzzle_book_location", "treasure_location"],
+    "dm_notes": "",
+    "version": 1,
+    "room_id": "M3",
+    "level": "middle",
+    "read_aloud_text": "<PASTE VERBATIM BOX TEXT FROM PDF p.19 — starts 'Tall shelves filled with books line the walls of this room...'>",
+    "connected_rooms": ["M4"],
+    "contains_entity_ids": [
+      "monster_swarm_animated_books",
+      "encounter_m3_swarm_bookshelf_ambush",
+      "treasure_jeweled_letter_opener",
+      "item_puzzle_book_r"
+    ],
+    "dcs": [
+      {
+        "check": "DC 15 Dexterity saving throw",
+        "trigger": "Swarm topples a 10-ft freestanding bookshelf section onto creatures in the affected area",
+        "success": "Avoid the falling shelf",
+        "failure": "Knocked prone and restrained by the fallen shelf"
+      },
+      {
+        "check": "DC 13 Strength (Athletics)",
+        "trigger": "Restrained creature uses an action to free itself from the fallen shelf",
+        "success": "Frees itself",
+        "failure": "Still restrained"
+      },
+      {
+        "check": "DC 15 Strength (Athletics)",
+        "trigger": "Ally lifts the fallen shelf to free restrained creatures",
+        "success": "Shelf lifted, restrained creatures freed"
+      },
+      {
+        "check": "passive Wisdom (Perception) 12",
+        "trigger": "Noticing the puzzle book 'R' on the shelf",
+        "success": "Book is spotted automatically (or a thorough search also finds it)"
+      }
+    ],
+    "light": "indigo-tinted from miasma through any windows; oil lamps elsewhere"
+  }
+]

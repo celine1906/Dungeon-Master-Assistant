@@ -1,0 +1,18 @@
+[
+  {
+    "id": "puzzle_planetarium_telescopes",
+    "type": "puzzle",
+    "name": "Planetarium Telescope Alignment",
+    "source_section": "M12. PLANETARIUM, p.22-23",
+    "full_text": "M12 is a domed planetarium with an illusion of a starry sky. Five telescopes are mounted on bronze plates and can be reoriented freely. A 1-foot crystal sphere sits fixed in a brass stand at the center. The room appears as a moonless grassy knoll; only the sky is sharp. The five telescopes must each be pointed at one of the five brightest stars shown on the star map in M11 (which renders them as blazing silver suns versus dots for ordinary stars). When all five are correctly aligned, starlight focuses through them onto the crystal ball and is refracted to illuminate a hidden door on one wall, which leads to M13 (the Chained Library). From inside M13, the door is plainly visible.",
+    "summary": "Align the 5 planetarium telescopes to the 5 silver-sun stars from the M11 wall map. Crystal ball refracts the focused light onto a secret door to M13.",
+    "keywords": ["planetarium", "telescopes", "stars", "crystal ball", "secret door", "M11 star map", "M13"],
+    "tags": ["puzzle", "spatial", "cross_room", "unlocks_room", "no_dc"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_id": "M12",
+    "solution": "Point each of the 5 telescopes at one of the 5 brightest stars shown on the star map in M11. On that map, ordinary stars are dots or small circles; the 5 critical stars are rendered as blazing silver suns. When all 5 telescopes are aligned, light focuses through them onto the central crystal ball and refracts to illuminate the secret door to M13.",
+    "dc": "No ability check required; observation-based puzzle. Players must visit M11 to see the star map.",
+    "unlocks": ["room_m13_chained_library"]
+  }
+]

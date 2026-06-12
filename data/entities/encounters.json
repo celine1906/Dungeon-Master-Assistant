@@ -1,0 +1,18 @@
+[
+  {
+    "id": "encounter_m3_swarm_bookshelf_ambush",
+    "type": "encounter",
+    "name": "Bookshelf Ambush in the Library",
+    "source_section": "M3. LIBRARY, Book Attack, p.19",
+    "full_text": "As the party moves through M3, the swarm of animated books (disguised as a pile) topples one of the 10-foot-wide freestanding bookshelf sections onto the characters. Anyone in the affected area must succeed on a DC 15 Dexterity save or be knocked prone and restrained by the fallen shelf. A restrained creature can use an action for a DC 13 Strength (Athletics) check to free itself; or an ally can lift the shelf with a DC 15 Strength (Athletics) check. Combat then proceeds normally with the revealed swarm. Note the swarm's False Objects trait: any character who has not seen the swarm move must beat DC 15 Wisdom (Perception) to recognize that the book pile is animate before it acts.",
+    "summary": "Swarm ambushes by toppling a 10-ft bookshelf; DC 15 Dex save or be prone + restrained; combat with the swarm follows.",
+    "keywords": ["ambush", "bookshelf", "swarm", "library", "M3", "DC 15 Dex save", "restrained"],
+    "tags": ["combat", "trap_like_opener", "1st_level_threat"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_id": "M3",
+    "monsters_involved": ["monster_swarm_animated_books"],
+    "trigger": "Characters move through M3 (the library).",
+    "tactics": "Swarm topples the shelf as its opening action, exploiting False Objects for advantage on initiative. After the shelf falls, it engages restrained or otherwise vulnerable characters first using its Book Club action. Remember it has fire vulnerability; players who think to use a torch will end fights quickly. With CR 1/4, this is calibrated as a meaningful but survivable encounter for a 1st-level party of 4-5."
+  }
+]

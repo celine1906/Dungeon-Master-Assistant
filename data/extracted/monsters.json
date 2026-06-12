@@ -1,0 +1,888 @@
+[
+  {
+    "id": "monster_imp_figurine",
+    "type": "monster",
+    "name": "Imp Figurine",
+    "source_section": "",
+    "full_text": "The imp figurine in Matreous's possession (see area Ml) appears to be a very detailed carving of an imp made from onyx. It's not a statue, however, but a real imp that Fistandia summoned and transformed into a statuette. Removing the figurine from the mansion breaks the enchantment and releases the imp.",
+    "summary": "An imp in the form of a detailed onyx figurine can be released by removing it from the mansion.",
+    "keywords": [
+      "imp",
+      "figurine"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_animated_books",
+    "type": "monster",
+    "name": "Swarm of Animated Books",
+    "source_section": "M3. LIBRARY, p.3",
+    "full_text": "One of the heaps of books is a swarm of animated books (see the accompanying stat block). As the characters move through the room, the swarm knocks one of the 10-foot-wide freestanding sections of bookshelf over onto the characters. Any creatures in the affected area must succeed on a DC 15 Dexterity saving throw or be knocked prone and restrained by the fallen shelf.",
+    "summary": "A swarm of animated books that can knock over shelves to restrain characters.",
+    "keywords": [
+      "animated books",
+      "swarm"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "m3_library"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 12,
+      "armor_class_source": "natural armor",
+      "hit_points": 22,
+      "hp_formula": "4d8 + 4",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 10,
+        "dex": 13,
+        "con": 12,
+        "int_": 1,
+        "wis": 10,
+        "cha": 1
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": ["fire"],
+      "damage_resistances": [],
+      "damage_immunities": ["poison", "psychic"],
+      "condition_immunities": ["charmed", "exhaustion", "frightened", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned"],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 50,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [
+        {
+          "name": "Book Club",
+          "description": "Melee Weapon Attack: +3 to hit, reach Oft., one target in the swarm's space. Hit: 6 (2d4 + l) bludgeoning damage, or 3 (ld4 + l) blud"
+        }
+      ],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_animated_broom",
+    "type": "monster",
+    "name": "Animated Broom",
+    "source_section": "M4. EXERCISE ROOM, p.3",
+    "full_text": "At the far end of the room, a broom hovers in the air, sweeping the floor by itself!",
+    "summary": "An animated broom that sweeps the floor.",
+    "keywords": [
+      "animated broom"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "m4_exercise_room"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_mimic_chair",
+    "type": "monster",
+    "name": "Mimic Chair",
+    "source_section": "M8. DINING ROOM, p.6",
+    "full_text": "The reason for the odd number of chairs is that the chair closest to the door to area M6 is a mimic that escaped from area M19. It moved the real chair to the corner and took its place, hoping to capture any creature entering from the kitchen. It has been able to ambush only the occasional cat or faerie dragon, so it's in a weakened state and has the following changes to its stat block:\n• It has 30 hit points.\n• The DC to escape its grapple is 10.",
+    "summary": "A mimic disguised as a chair near the door from area M6. It ambushes creatures entering from the kitchen, but is weakened with only 30 HP and a lower DC to escape its grapple.",
+    "keywords": [
+      "mimic",
+      "chair"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_invisible_orange_faerie_dragons",
+    "type": "monster",
+    "name": "Invisible Orange Faerie Dragons",
+    "source_section": "M9. ARBORETUM, p.6",
+    "full_text": "Two invisible orange faerie dragons are perched in the trees. They are mischievous creatures, always looking for fun, but the homunculi and the cats provide little entertainment, so they hope to keep the characters in the arboretum for as long as possible so they can play with them. Giggling incessantly, they fly toward the characters, use their Euphoria Breath, and flit out of danger, still invisible. If they are attacked, they disengage and retreat to a safe place, becoming invisible again if their concentration is broken.",
+    "summary": "Two invisible orange faerie dragons giggle and use Euphoria Breath to keep characters entertained in the arboretum.",
+    "keywords": [
+      "faerie dragons",
+      "invisible"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 3,
+        "dex": 20,
+        "con": 13,
+        "int_": 14,
+        "wis": 12,
+        "cha": 16
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_animated_chained_library",
+    "type": "monster",
+    "name": "Animated Chained Library",
+    "source_section": "Ml3. THE CHAINED LIBRARY, p.7",
+    "full_text": "",
+    "summary": "An enchanted library that attacks intruders with animated chains.",
+    "keywords": [
+      "animated chains",
+      "enchanted books"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "m13"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": "Enchanted to be jealously possessive of its contents, attacking any creature within reach."
+  },
+  {
+    "id": "monster_quasit_toad_form_ml8",
+    "type": "monster",
+    "name": "Quasit (Toad Form)",
+    "source_section": "Ml8. SUMMONING ROOM, p.9",
+    "full_text": "",
+    "summary": "A quasit in toad form that attacks approaching creatures.",
+    "keywords": [
+      "quasit",
+      "toad"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "ml8"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_cockatrice_mll",
+    "type": "monster",
+    "name": "Cockatrice",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A preserved cockatrice in a glass vessel.",
+    "keywords": [
+      "cockatrice"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_flumph_mll",
+    "type": "monster",
+    "name": "Flumph",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A preserved flumph in a glass vessel.",
+    "keywords": [
+      "flumph"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_giant_fire_beetle_mll",
+    "type": "monster",
+    "name": "Giant Fire Beetle",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A preserved giant fire beetle in a glass vessel.",
+    "keywords": [
+      "giant fire beetle"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_small_grell_mll",
+    "type": "monster",
+    "name": "Small Grell",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A preserved small grell in a glass vessel.",
+    "keywords": [
+      "small grell"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_myconid_sprout_mll",
+    "type": "monster",
+    "name": "Myconid Sprout",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A preserved myconid sprout in a glass vessel.",
+    "keywords": [
+      "myconid"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_pseudodragon_mll",
+    "type": "monster",
+    "name": "Pseudodragon",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A preserved pseudodragon in a glass vessel.",
+    "keywords": [
+      "pseudodragon"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_severed_hands_mll",
+    "type": "monster",
+    "name": "Severed Hands",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "Four severed hands preserved in the same jar.",
+    "keywords": [
+      "severed hands"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_slaad_tadpole_mll",
+    "type": "monster",
+    "name": "Slaad Tadpole",
+    "source_section": "Ml9. PRESERVED MENAGERIE, p.9",
+    "full_text": "",
+    "summary": "A live slaad tadpole in a glass vessel that attacks if the jar is opened.",
+    "keywords": [
+      "slaad"
+    ],
+    "tags": [],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [
+      "mll"
+    ],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  },
+  {
+    "id": "monster_imp",
+    "type": "monster",
+    "name": "Imp",
+    "source_section": "CONCLUSION, p.9",
+    "full_text": "When the imp was taken from the mansion in its figurine form, the enchantment binding it ended, allowing it to sting and kill Matreous. The imp is now invisible and hiding in a corner of Matreous's study. It attacks the first creature that exits the mansion.",
+    "summary": "An invisible imp hides in Matreous's study and attacks upon exiting the mansion.",
+    "keywords": [
+      "invisible",
+      "attack"
+    ],
+    "tags": [
+      "combat"
+    ],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": [],
+    "quantity": 1,
+    "stat_block": {
+      "size": "",
+      "creature_type": "",
+      "alignment": "",
+      "armor_class": 0,
+      "armor_class_source": "",
+      "hit_points": 0,
+      "hp_formula": "",
+      "speed": {
+        "walk": 0
+      },
+      "abilities": {
+        "str_": 0,
+        "dex": 0,
+        "con": 0,
+        "int_": 0,
+        "wis": 0,
+        "cha": 0
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": [],
+      "languages": [],
+      "challenge_rating": "",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [],
+      "legendary_actions": [],
+      "reactions": []
+    },
+    "mm_reference": "",
+    "modifications": ""
+  }
+]
