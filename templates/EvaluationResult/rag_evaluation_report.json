@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-05T07:26:43.940567",
+  "collection_name": "candlekeep_joy_extradimensional",
+  "total_entities": 74,
+  "metrics": {
+    "type_accuracy": 48.0,
+    "mrr": 0.6990000000000001,
+    "precision_at_1": 0.68,
+    "precision_at_3": 0.5333333333333333,
+    "precision_at_5": 0.4800000000000001
+  },
+  "type_distribution": {
+    "adventure_overview": 1,
+    "clue": 3,
+    "encounter": 8,
+    "story_hook": 5,
+    "item": 10,
+    "monster": 16,
+    "npc": 2,
+    "puzzle": 2,
+    "room": 19,
+    "treasure": 8
+  }
+}

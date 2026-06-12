@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-06-05T07:38:28.256818",
+  "collection_name": "candlekeep_joy_extradimensional",
+  "generation_model": "qwen2.5:14b",
+  "embedding_model": "qwen3-embedding:latest",
+  "top_k_retrieval": 5,
+  "temperature": 0.1,
+  "aggregate_scores": {
+    "faithfulness": 1.0,
+    "relevance": 1.0,
+    "content_coverage": 0.75,
+    "overall": 0.9166666666666666
+  },
+  "test_results": [
+    {
+      "test_case": {
+        "query": "What monsters are in the library?",
+        "expected_entities": [
+          "swarm of animated books",
+          "library",
+          "M3"
+        ],
+        "expected_types": [
+          "monster",
+          "room"
+        ],
+        "description": "Should mention swarm of animated books in M3"
+      },
+      "generated_answer": "According to Document 2 (room: Library), the library contains a swarm of animated books that ambushes by toppling a freestanding bookshelf onto the party. According to Document 3 (room: The Chained Library), the room contains an enchanted and possessive chained library, which is described as attacking any creature within reach. No specific monster names are given for these entities in the provided documents; they are referred to as \"animated books\" and \"chained library.\" \n\nThe provided context does not mention other monsters such as a Cockatrice (Document 4) being present in either of the libraries mentioned.",
+      "retrieved_docs_count": 5,
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "content_coverage": 0.6666666666666666
+    },
+    {
+      "test_case": {
+        "query": "How do I escape the mansion?",
+        "expected_entities": [
+          "LIBERTY",
+          "seven books",
+          "puzzle"
+        ],
+        "expected_types": [
+          "puzzle",
+          "clue"
+        ],
+        "description": "Should explain LIBERTY puzzle with 7 books"
+      },
+      "generated_answer": "To escape the mansion, you need to collect at least some of the lettered books and guess the command word \"LIBERTY.\" Once you have done so, speak the word within 10 feet of the double door in room M1. This will open a portal back to Candlekeep's study for one minute. According to Document 1, this is the climax and escape from the mansion.\n\nBe cautious when exiting as an invisible imp may attack you upon leaving the mansion through the portal. If you defeat it, it disappears in a cloud of black smoke.",
+      "retrieved_docs_count": 5,
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "content_coverage": 0.3333333333333333
+    },
+    {
+      "test_case": {
+        "query": "Who are the homunculi?",
+        "expected_entities": [
+          "Cumin",
+          "Coriander",
+          "kitchen"
+        ],
+        "expected_types": [
+          "npc"
+        ],
+        "description": "Should mention Cumin and Coriander in the kitchen"
+      },
+      "generated_answer": "The homunculi are Cumin and Coriander. According to Document 1, Cumin was created by Fistandia, while Coriander was created by a mage named Freyot. Both are unusual in that they can speak Common and are very eager to serve the party. They run the kitchen (M6) and dining room (M8), insisting on serving bread and soup whenever possible.",
+      "retrieved_docs_count": 5,
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "content_coverage": 1.0
+    },
+    {
+      "test_case": {
+        "query": "What treasure is in the chained library?",
+        "expected_entities": [
+          "flail",
+          "+1",
+          "chained library",
+          "M13"
+        ],
+        "expected_types": [
+          "treasure",
+          "room"
+        ],
+        "description": "Should mention +1 flail from animated chained library"
+      },
+      "generated_answer": "According to Document 1, the treasure in the Chained Library (room M12) includes a rare book that functions as a +1 flail when broken free from its chains after defeating the library. The specific book is titled \"Martial Attack Techniques.\" There are no other explicit treasures mentioned for this room within the provided context.",
+      "retrieved_docs_count": 5,
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "content_coverage": 0.75
+    },
+    {
+      "test_case": {
+        "query": "What happened to Matreous?",
+        "expected_entities": [
+          "imp",
+          "killed",
+          "Matreous"
+        ],
+        "expected_types": [
+          "npc",
+          "monster"
+        ],
+        "description": "Should explain imp killed Matreous"
+      },
+      "generated_answer": "According to Document 1 and Document 4, when Matreous stepped through the portal with the onyx imp figurine, the enchantment binding the imp ended. The imp reverted from its figurine form, stung Matreous, and killed him. When the party returns to Candlekeep, they find Matreous's body in the study (Document 3).",
+      "retrieved_docs_count": 5,
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "content_coverage": 1.0
+    }
+  ]
+}

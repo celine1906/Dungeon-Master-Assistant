@@ -1,0 +1,59 @@
+[
+  {
+    "id": "npc_matreous",
+    "type": "npc",
+    "name": "Matreous",
+    "source_section": "M1. FOYER AND HALLWAY, p.18; CONCLUSION, p.25",
+    "full_text": "<FILL: paste verbatim description of Matreous from the adventure, including his backstory as the sage who found the gateway, his offer to keep the portal open, and what happens when he steps through with the imp figurine>",
+    "summary": "Middle-aged human sage in gray robes; expert in curses; discovered the gateway to Fistandia's mansion; killed by the imp figurine when he steps through the portal back to Candlekeep.",
+    "keywords": ["sage", "curse expert", "Candlekeep", "Matreous", "gray robes", "human"],
+    "tags": ["npc", "quest_giver", "victim", "killed_by_imp"],
+    "dm_notes": "",
+    "version": 1,
+    "role": "Quest-giver NPC; expert in application and removal of curses; killed during the adventure by the imp released from its figurine form.",
+    "alignment": "Neutral",
+    "location_room_ids": ["M1"],
+    "mm_reference": "Monster Manual: 'Sage' stat block",
+    "stat_block": {
+      "size": "Medium",
+      "creature_type": "humanoid (human)",
+      "alignment": "any alignment",
+      "armor_class": 0,
+      "armor_class_source": "<FILL>",
+      "hit_points": 0,
+      "hp_formula": "<FILL: e.g. 2d8+2>",
+      "speed": {"walk": 30},
+      "abilities": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "saving_throws": {},
+      "skills": {
+        "Arcana": 0,
+        "History": 0
+      },
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": ["passive Perception <FILL>"],
+      "languages": ["<FILL: any four languages>"],
+      "challenge_rating": "<FILL: e.g. 1/2>",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [],
+      "actions": [
+        {
+          "name": "<FILL: e.g. Dagger>",
+          "description": "<FILL: Melee Weapon Attack: +X to hit, reach 5 ft., one target. Hit: ...>"
+        }
+      ],
+      "legendary_actions": [],
+      "reactions": []
+    }
+  }
+]

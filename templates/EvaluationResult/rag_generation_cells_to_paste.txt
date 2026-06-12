@@ -1,0 +1,330 @@
+================================================================================
+CELLS TO PASTE INTO rag_generation.ipynb
+Copy each section below into new/existing cells in your notebook
+================================================================================
+
+
+================================================================================
+CELL: Replace the build_prompt() function (cell-10)
+TYPE: Code Cell
+================================================================================
+
+def build_prompt(query: str, retrieved_docs: List[str], metadata_list: List[Dict]) -> str:
+    """
+    Build a prompt with retrieved context for the LLM.
+
+    CUSTOMIZABLE PROMPT TEMPLATE - Modify this to change how the LLM responds!
+
+    Format:
+    - System instruction (WHO the LLM is)
+    - Retrieved context (WHAT information it has)
+    - User question (WHAT the user wants)
+    - Instructions (HOW to answer)
+    """
+
+    # Build context from retrieved documents with more detail
+    context_parts = []
+    for i, (doc, meta) in enumerate(zip(retrieved_docs, metadata_list), 1):
+        entity_type = meta.get('entity_type', 'unknown')
+        entity_name = meta.get('name', 'Unknown')
+        source_section = meta.get('source_section', 'N/A')
+
+        context_parts.append(
+            f"Document {i} [{entity_type}: {entity_name}] (Source: {source_section}):\n{doc}\n"
+        )
+
+    context_text = "\n".join(context_parts)
+
+    # ========================================================================
+    # CUSTOMIZABLE PROMPT - MODIFY THIS SECTION!
+    # ========================================================================
+
+    prompt = f"""You are an expert Dungeon Master assistant for the D&D 5e adventure "The Joy of Extradimensional Spaces" from Candlekeep Mysteries.
+
+Your role is to help players navigate this adventure by providing accurate, helpful information based on the adventure module.
+
+CONTEXT DOCUMENTS:
+{context_text}
+
+PLAYER QUESTION:
+{query}
+
+INSTRUCTIONS FOR YOUR ANSWER:
+1. Answer the player's question directly and clearly
+2. Use specific details from the context (room numbers like M3, M13, DC values, monster stats, etc.)
+3. Cite your sources by mentioning which document you used (e.g., "According to Document 1...")
+4. If the answer involves:
+   - A room: Mention room number and what's inside
+   - A monster: Mention stats, location, and tactics
+   - A puzzle: Explain the solution clearly
+   - An NPC: Describe who they are and where to find them
+   - Treasure: Mention value and location
+5. If the context doesn't contain enough information, say: "The documents don't provide enough detail about [topic]. You may need to check the full adventure module."
+6. DO NOT make up information that isn't in the context
+7. Keep your answer concise but informative (2-4 paragraphs)
+
+ANSWER:"""
+
+    return prompt
+
+
+================================================================================
+CELL: Prompt Template Options (NEW - Insert after cell-10)
+TYPE: Markdown Cell
+================================================================================
+
+## Prompt Templates (Alternative Prompts to Try)
+
+You can copy any of these prompt templates into the `build_prompt()` function above to change the LLM's behavior.
+
+
+================================================================================
+CELL: Template Library (NEW - Insert after above markdown)
+TYPE: Code Cell
+================================================================================
+
+# ============================================================================
+# PROMPT TEMPLATE OPTIONS - Copy any of these into build_prompt() function
+# ============================================================================
+
+# TEMPLATE 1: Detailed DM Assistant (Current)
+PROMPT_TEMPLATE_DETAILED = """You are an expert Dungeon Master assistant for the D&D 5e adventure "The Joy of Extradimensional Spaces" from Candlekeep Mysteries.
+
+Your role is to help players navigate this adventure by providing accurate, helpful information based on the adventure module.
+
+CONTEXT DOCUMENTS:
+{context_text}
+
+PLAYER QUESTION:
+{query}
+
+INSTRUCTIONS FOR YOUR ANSWER:
+1. Answer the player's question directly and clearly
+2. Use specific details from the context (room numbers like M3, M13, DC values, monster stats, etc.)
+3. Cite your sources by mentioning which document you used (e.g., "According to Document 1...")
+4. If the answer involves:
+   - A room: Mention room number and what's inside
+   - A monster: Mention stats, location, and tactics
+   - A puzzle: Explain the solution clearly
+   - An NPC: Describe who they are and where to find them
+   - Treasure: Mention value and location
+5. If the context doesn't contain enough information, say: "The documents don't provide enough detail about [topic]. You may need to check the full adventure module."
+6. DO NOT make up information that isn't in the context
+7. Keep your answer concise but informative (2-4 paragraphs)
+
+ANSWER:"""
+
+
+# TEMPLATE 2: Concise/Short Answers
+PROMPT_TEMPLATE_CONCISE = """You are a D&D assistant. Answer the question using ONLY the context provided.
+
+CONTEXT:
+{context_text}
+
+QUESTION:
+{query}
+
+RULES:
+- Be brief (1-2 paragraphs max)
+- Cite document numbers
+- Don't make up information
+- If unsure, say "Not in the provided documents"
+
+ANSWER:"""
+
+
+# TEMPLATE 3: Narrative/Story Style
+PROMPT_TEMPLATE_NARRATIVE = """You are a storytelling Dungeon Master helping players explore "The Joy of Extradimensional Spaces."
+
+Use the context below to answer the player's question in an engaging, narrative style while staying accurate to the adventure.
+
+ADVENTURE CONTEXT:
+{context_text}
+
+PLAYER ASKS:
+{query}
+
+YOUR RESPONSE (as DM):
+- Speak directly to the players in character
+- Paint vivid descriptions
+- Reference specific locations and details from the context
+- Cite sources in parentheses (Document 1, etc.)
+- Don't invent details not in the context
+
+ANSWER:"""
+
+
+# TEMPLATE 4: Bullet Points/Structured
+PROMPT_TEMPLATE_STRUCTURED = """You are a D&D reference assistant. Provide structured answers.
+
+REFERENCE DOCUMENTS:
+{context_text}
+
+QUESTION:
+{query}
+
+FORMAT YOUR ANSWER AS:
+1. Summary (1 sentence)
+2. Key Details (bullet points)
+3. Source Citations (which documents)
+
+ANSWER:"""
+
+
+# TEMPLATE 5: Player-Friendly (No Spoilers)
+PROMPT_TEMPLATE_PLAYER_FRIENDLY = """You are a helpful DM assistant. Answer questions without spoiling surprises.
+
+CONTEXT:
+{context_text}
+
+PLAYER QUESTION:
+{query}
+
+GUIDELINES:
+- Answer what the player asked
+- Don't reveal information they shouldn't know yet
+- Hint at mysteries without solving them
+- Be encouraging and helpful
+- Cite sources
+
+ANSWER:"""
+
+# Print available templates
+print("Available Prompt Templates:")
+print("1. DETAILED (default) - Comprehensive DM assistant")
+print("2. CONCISE - Short, to-the-point answers")
+print("3. NARRATIVE - Story-style, engaging responses")
+print("4. STRUCTURED - Bullet points and organized")
+print("5. PLAYER_FRIENDLY - Avoids spoilers")
+print("\nTo use: Copy the template code into build_prompt() function")
+
+
+================================================================================
+CELL: Test with 25 Queries - Header (NEW - Insert after cell-27)
+TYPE: Markdown Cell
+================================================================================
+
+---
+# Test with 25 Evaluation Queries
+
+Use the same test queries from rag_retrieval_evaluation.ipynb
+
+
+================================================================================
+CELL: Load 25 Test Queries (NEW)
+TYPE: Code Cell
+================================================================================
+
+# Load the 25 test queries from evaluation
+TEST_QUERIES = [
+    "What monsters might attack the party?",
+    "Who can I talk to in this adventure?",
+    "What valuable items can I find?",
+    "Tell me about the adventure",
+    "What clue can help solve the mystery?",
+    "What is described in the book?",
+    "How does the portal open?",
+    "What are the puzzle books?",
+    "What is the imp figurine?",
+    "How do characters assemble the books?",
+    "What is the conclusion of the adventure?",
+    "What further adventures are suggested?",
+    "Who is Matreous and where is he?",
+    "What is Fistandia known for?",
+    "Who are Cumin and Coriander?",
+    "What is in the foyer and hallway?",
+    "What creatures guard the library?",
+    "What happens in the exercise room?",
+    "What is in the study?",
+    "What food or supplies are in the kitchen?",
+    "What is stored in the pantry?",
+    "What is in the dining room?",
+    "What plants or animals are in the arboretum?",
+    "What equipment is in the laboratory?",
+    "What is inside the planetarium?",
+]
+
+print(f"Loaded {len(TEST_QUERIES)} test queries from evaluation")
+
+
+================================================================================
+CELL: Test Single Query (NEW)
+TYPE: Code Cell
+================================================================================
+
+# Test a single query (choose one from TEST_QUERIES)
+query_index = 0  # Change this to test different queries (0-24)
+
+print(f"Testing query {query_index + 1}/{len(TEST_QUERIES)}")
+print(f"Query: {TEST_QUERIES[query_index]}\n")
+
+result = generate_answer(TEST_QUERIES[query_index], top_k=5)
+display_rag_result(result, show_prompt=True)
+
+
+================================================================================
+CELL: Test All 25 Queries (NEW - OPTIONAL)
+TYPE: Code Cell
+================================================================================
+
+# Test ALL 25 queries (WARNING: This will take a while!)
+# Uncomment the code below to run all queries
+
+# for i, query in enumerate(TEST_QUERIES):
+#     print(f"\n{'='*80}")
+#     print(f"TESTING QUERY {i+1}/{len(TEST_QUERIES)}")
+#     print(f"{'='*80}\n")
+
+#     result = generate_answer(query, top_k=5)
+#     display_rag_result(result)
+
+#     # Optional: pause between queries
+#     # input("Press Enter for next query...")
+
+# print("\n✅ Completed all 25 test queries!")
+
+
+================================================================================
+USAGE INSTRUCTIONS
+================================================================================
+
+1. Open rag_generation.ipynb in Jupyter
+
+2. REPLACE cell-10 (build_prompt function) with the first code block above
+
+3. INSERT new cells after cell-10:
+   - Markdown cell: "Prompt Templates..."
+   - Code cell: Template library
+
+4. INSERT new cells after cell-27:
+   - Markdown cell: "Test with 25 Queries"
+   - Code cell: Load TEST_QUERIES
+   - Code cell: Test single query
+   - Code cell: Test all queries (optional)
+
+5. Run the notebook!
+
+6. To change prompts:
+   - Copy a template from the template library
+   - Paste it into build_prompt() function
+   - Re-run the cell
+   - Test your query again
+
+
+================================================================================
+TIPS FOR TESTING
+================================================================================
+
+1. Start with query_index = 0 (monsters question)
+2. Test with default DETAILED prompt
+3. Try CONCISE prompt - compare the difference
+4. Try NARRATIVE prompt - see how it changes tone
+5. Move to query_index = 14 (Cumin and Coriander) - test NPC queries
+6. Try query_index = 18 (study) - test room queries
+
+Each prompt will generate different styles of answers!
+
+
+================================================================================
+END OF FILE
+================================================================================

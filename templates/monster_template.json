@@ -1,0 +1,68 @@
+[
+  {
+    "id": "monster_<FILL: snake_case_name>",
+    "type": "monster",
+    "name": "<FILL: e.g. Swarm of Animated Books>",
+    "source_section": "<FILL: e.g. M3. LIBRARY, p.19 (stat block in-text); OR Monster Manual p.220>",
+    "full_text": "<FILL: paste the verbatim stat block or a description of how the monster is used in the adventure>",
+    "summary": "<FILL: 1-2 sentence summary: what it is, where it appears, what it does>",
+    "keywords": ["<FILL: e.g. swarm>", "<FILL: construct>", "<FILL: library>"],
+    "tags": ["<FILL: combat>", "<FILL: ambush>", "<FILL: animated_object>"],
+    "dm_notes": "",
+    "version": 1,
+    "location_room_ids": ["<FILL: e.g. M3>"],
+    "quantity": 1,
+    "mm_reference": "<FILL: only if using a Monster Manual stat block, e.g. 'Monster Manual p.220'. Leave empty string if statblock is fully inline in this JSON>",
+    "modifications": "<FILL: adventure-specific changes from base stat block, e.g. 'It has 30 hit points. The DC to escape its grapple is 10.' for the weakened mimic in M8. Empty string if none>",
+    "stat_block": {
+      "size": "<FILL: Tiny|Small|Medium|Large|Huge|Gargantuan>",
+      "creature_type": "<FILL: construct|fiend|dragon|aberration|...>",
+      "alignment": "<FILL: e.g. unaligned, lawful evil>",
+      "armor_class": 0,
+      "armor_class_source": "<FILL: e.g. natural armor>",
+      "hit_points": 0,
+      "hp_formula": "<FILL: e.g. 4d8+4>",
+      "speed": {
+        "walk": 0,
+        "fly": 0,
+        "hover": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0
+      },
+      "abilities": {
+        "STR": 10,
+        "DEX": 10,
+        "CON": 10,
+        "INT": 10,
+        "WIS": 10,
+        "CHA": 10
+      },
+      "saving_throws": {},
+      "skills": {},
+      "damage_vulnerabilities": [],
+      "damage_resistances": [],
+      "damage_immunities": [],
+      "condition_immunities": [],
+      "senses": ["<FILL: e.g. blindsight 60 ft. (blind beyond this radius)>", "passive Perception <FILL>"],
+      "languages": [],
+      "challenge_rating": "<FILL: as string, e.g. '1/4', '1/2', '1'>",
+      "xp": 0,
+      "proficiency_bonus": 2,
+      "traits": [
+        {
+          "name": "<FILL: e.g. False Objects>",
+          "description": "<FILL: trait description>"
+        }
+      ],
+      "actions": [
+        {
+          "name": "<FILL: e.g. Book Club>",
+          "description": "<FILL: Melee Weapon Attack: +X to hit, reach Y ft., one target. Hit: ...>"
+        }
+      ],
+      "legendary_actions": [],
+      "reactions": []
+    }
+  }
+]
