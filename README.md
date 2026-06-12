@@ -4,14 +4,14 @@ A macOS application with RAG (Retrieval-Augmented Generation) capabilities to as
 
 ## Features
 
-- 🎲 **Intelligent Q&A**: Ask questions about NPCs, rooms, puzzles, and story elements
-- 🗺️ **Interactive Mansion Map**: View labeled floor plan overlay during sessions
-- 🎭 **Scenario Generation**: Get multiple possible outcomes for player actions
-- ⚡ **Dual Mode Support**:
+- **Intelligent Q&A**: Ask questions about NPCs, rooms, puzzles, and story elements
+- **Interactive Mansion Map**: View labeled floor plan overlay during sessions
+- **Scenario Generation**: Get multiple possible outcomes for player actions
+- **Dual Mode Support**:
   - **Fast Mode**: Local Ollama (Qwen3-8b) for quick responses
   - **Smart Mode**: Groq API (Llama-3.3-70b) for detailed, complex scenarios
-- 📖 **DM Read-Aloud Screen**: Story introduction before each session
-- 🔍 **Hybrid Retrieval**: BGE-M3 semantic search + BM25 keyword search with RRF fusion
+- **DM Read-Aloud Screen**: Story introduction before each session
+- **Hybrid Retrieval**: BGE-M3 semantic search + BM25 keyword search with RRF fusion
 
 ## Architecture
 
@@ -55,8 +55,8 @@ A macOS application with RAG (Retrieval-Augmented Generation) capabilities to as
 
 1. **Clone the repository**
    ```bash
-   git clone <your-friend's-repo-url>
-   cd "Challenge 1 NLP"
+   git clone <repo-url>
+   cd "......"
    ```
 
 2. **Set up Python environment**
@@ -230,14 +230,7 @@ Edit `pipeline.py`:
 - `RETRIEVAL_PROFILES` - Weights and context sizes
 - `generate_answer()` - Core RAG logic
 
-## License
-
-[Add your license here]
-
 ## Credits
 
 Built for Candlekeep Mysteries by Wizards of the Coast.
 
-## Contact
-
-[Your contact information]
